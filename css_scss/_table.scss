@@ -16,12 +16,62 @@
     td{
       padding:11px 20px;
       border-bottom:1px solid #ccc;
+      font-size:14px;
     }
   }
 
 
   &-vt{
+    border-top:2px solid #000;
 
+    th{
+      height:40px;
+      border-bottom:1px solid #000;
+      font-size:13px;
+      color:#000;
+      vertical-align:middle;
+    }
+
+    td{
+      height:40px;
+      border-bottom:1px solid #ccc;
+      font-size:13px;
+      color:#666;
+      vertical-align:middle;
+    }
+
+  }
+
+  &-cell{
+    &-left{
+      text-align:left;
+    }
+
+    &-center{
+      text-align:center;
+    }
+  }
+
+  .multi-line{
+    line-height:1.8;
+    height:150px
+  }
+
+  .attached-file{
+    display:inline-block;
+    padding-left:20px;
+    position:relative;
+
+    &:before{
+      content:"";
+      display:block;
+      width:12px;
+      height:16px;
+      background:url(/images/online_consulting/spr_online_consulting_input.png) 0 -24px no-repeat;
+      position:absolute;
+      top:0;
+      left:0;
+    }
   }
 
 

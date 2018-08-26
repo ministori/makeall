@@ -288,7 +288,7 @@
     margin-top:40px;
 
     &-top{
-      margin-bottom:5px;
+      margin-bottom:10px;
 
       &:after{
         content:"";
@@ -305,6 +305,15 @@
 
     &-btn{
       margin-top:25px;
+      text-align:center;
+
+      &.right{
+        text-align:right;
+      }
+    }
+
+    &-paging{
+      margin-top:65px;
       text-align:center;
     }
   }
