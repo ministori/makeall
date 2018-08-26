@@ -1,0 +1,276 @@
+<!--=include _include/_header.html -->
+  <!-- contents -->
+  <div id="real_contents" class="contents">
+    <div class="container">
+      <!-- sub_top -->
+      <div class="sub_top">
+        <ul class="breadcrumb">
+          <li><i class="ti-home"></i> HOME</li>
+          <li>메이커 소통공간</li>
+          <li>온라인 컨설팅</li>
+        </ul>
+        <h2 class="sub_top_tit">메이커 <span class="normal">소통공간</span></h2>
+        <p class="sub-top-desc">메이커 스페이스는 메이커분들의 창작활동을 응원합니다.</p>
+      </div>
+      <!-- // sub_top -->
+      <!-- 로그인 관련 스크립트 주석처리
+      <script type="text/javascript">
+        function find_string() {
+            var form = document.sub_form;
+            form.page.value = "1";
+
+            form.submit();
+        }
+
+        function project_tab(category){
+            document.location.href="?tsort=3&msort=8&s_key=&s_type=project_name&category="+category;
+        }
+
+        function write_btn(mode) {
+            var m_id = "";
+
+            if(m_id == "") {
+                alert('로그인 후 이용가능합니다.');
+                return;
+            }
+            var szhref = "/network/openingwrite.php?tsort=3&msort=8&s_key=&s_type=project_name&no=&page=1&mode="+mode+"&category=";
+
+            window.open(szhref , "admin_menu2" , "width=900,height=800,scrollbars=yes,resize=yes");
+        }
+
+        function open_write_btn(mode) {
+            var m_id = "";
+
+            if(m_id == "") {
+                alert('로그인 후 이용가능합니다.');
+                return;
+            }
+
+            document.location.href="/network/openproject.php?tsort=3&msort=8&s_key=&s_type=project_name&no=&page=1&mode=" + mode;
+        }
+    </script>
+      -->
+      <div class="wrap">
+        <div class="contents_wrap">
+          <!-- net_tab -->
+          <div class="net_tab">
+            <a href="" class="on">온라인 컨설팅</a>
+            <p>/</p>
+            <a href="">온라인 컨설팅 사례</a>
+          </div>
+          <!-- // net_tab -->
+
+          <div class="expert-search-area">
+
+            <div class="expert-search-history">
+
+              <div class="expert-search-history-item">
+                <div class="item-inner">
+                  <div class="history-title">전문가 수</div>
+                  <div class="history-number">99999</div>
+                </div>
+              </div>
+
+              <div class="expert-search-history-item">
+                <div class="item-inner">
+                  <div class="history-title">해결한 문제 수</div>
+                  <div class="history-number">99</div>
+                </div>
+              </div>
+
+              <div class="expert-search-history-item">
+                <div class="item-inner">
+                  <div class="history-title">컨설팅 요청 수</div>
+                  <div class="history-number">999</div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="expert-search-option">
+              <div class="expert-search-option-wrap">
+                <div class="expert-search-option-title">분류</div>
+                <ul class="expert-search-option-list">
+                  <li class="expert-search-option-item">
+                    <input type="checkbox" id="expert-search-chk-edu" class="chk-input"/>
+                    <label for="expert-search-chk-edu" class="chk-label">교육</label>
+                  </li>
+                  <li class="expert-search-option-item">
+                    <input type="checkbox" id="expert-search-chk-culture" class="chk-input"/>
+                    <label for="expert-search-chk-culture" class="chk-label">문화</label>
+                  </li>
+                  <li class="expert-search-option-item">
+                    <input type="checkbox" id="expert-search-chk-environment" class="chk-input"/>
+                    <label for="expert-search-chk-environment" class="chk-label">환경</label>
+                  </li>
+                  <li class="expert-search-option-item">
+                    <input type="checkbox" id="expert-search-chk-energy" class="chk-input"/>
+                    <label for="expert-search-chk-energy" class="chk-label">에너지</label>
+                  </li>
+                  <li class="expert-search-option-item">
+                    <input type="checkbox" id="expert-search-chk-safety" class="chk-input"/>
+                    <label for="expert-search-chk-safety" class="chk-label">안전</label>
+                  </li>
+                  <li class="expert-search-option-item">
+                    <input type="checkbox" id="expert-search-chk-medical" class="chk-input"/>
+                    <label for="expert-search-chk-medical" class="chk-label">의료</label>
+                  </li>
+                  <li class="expert-search-option-item">
+                    <input type="checkbox" id="expert-search-chk-welfare" class="chk-input"/>
+                    <label for="expert-search-chk-welfare" class="chk-label">복지</label>
+                  </li>
+                  <li class="expert-search-option-item">
+                    <input type="checkbox" id="expert-search-chk-ict" class="chk-input"/>
+                    <label for="expert-search-chk-ict" class="chk-label">정보통신</label>
+                  </li>
+                </ul>
+              </div>
+              <div class="expert-search-option-wrap">
+                <div class="expert-search-option-title">전문분야</div>
+                <ul class="expert-search-option-list">
+                  <li class="expert-search-option-item">
+                    <input type="checkbox" id="expert-search-chk-idea" class="chk-input"/>
+                    <label for="expert-search-chk-idea" class="chk-label">아이디어 구체화/기술개발</label>
+                  </li>
+                  <li class="expert-search-option-item">
+                    <input type="checkbox" id="expert-search-chk-intellectual" class="chk-input"/>
+                    <label for="expert-search-chk-intellectual" class="chk-label">지식재산권 권리화</label>
+                  </li>
+                  <li class="expert-search-option-item">
+                    <input type="checkbox" id="expert-search-chk-prototype" class="chk-input"/>
+                    <label for="expert-search-chk-prototype" class="chk-label">시제품 제작</label>
+                  </li>
+                  <li class="expert-search-option-item">
+                    <input type="checkbox" id="expert-search-chk-bm" class="chk-input"/>
+                    <label for="expert-search-chk-bm" class="chk-label">BM/사업계획서 작성</label>
+                  </li>
+                  <li class="expert-search-option-item">
+                    <input type="checkbox" id="expert-search-chk-marketing" class="chk-input"/>
+                    <label for="expert-search-chk-marketing" class="chk-label">마케팅</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="expert-search-input">
+
+              <select class="expert-search-select" title="분야선택">
+                <option>전체1</option>
+                <option>전체2</option>
+                <option>전체3</option>
+              </select>
+
+              <input type="text" class="expert-search-text" title="전문가 입력" />
+
+              <button type="button" class="expert-search-btn">전문가 검색</button>
+
+            </div>
+            <script>
+              $(function(){
+                $('.expert-search-select').selectric();
+              });
+            </script>
+
+          </div>
+
+          <div class="online-consulting-area">
+
+            <div class="expert-info">
+
+              <div class="expert-info-image">
+                <img src="/images/online_consulting/temp_expert_photo.jpg" alt="전문가 사진" />
+              </div>
+
+              <div class="expert-info-text">
+                <div class="info-title">
+                  <div class="info-name"><span class="strong">윤명기</span> <span>전문가</span></div>
+                </div>
+                <div class="info-detail">
+                  <ul class="info-detail-list col2">
+                    <li class="info-detail-item"><span class="heading">소속</span><span class="desc">홍익대학교</span></li>
+                    <li class="info-detail-item"><span class="heading">분류</span><span class="desc">정보통신</span></li>
+                    <li class="info-detail-item"><span class="heading">전문분야</span><span class="desc">아이디어 구체화/기술개발</span></li>
+                    <li class="info-detail-item"><span class="heading">최근답변일</span><span class="desc">2018.07.31</span></li>
+                  </ul>
+                  <div class="info-detail-list info-detail-item col2">
+                    <span class="heading">소개</span>
+                    <span class="desc">
+                      젊은이들이 팀을 이루어 앱을 개발하고 가능하면 창업으로 연계되는 과정을 지원 합니다. 컴퓨터 인공지능 전문가로서 기슬 현황, 신기술 개발 가능성 등에 대한 조언 합니다.
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="online-consulting-contents">
+
+              <div class="online-consulting-contents-top">
+
+                <div class="description-type1 description-left">
+                  <span>남은 컨설팅 수</span>
+                  <span class="strong">2</span>
+                  <span>건</span>
+                </div>
+
+                <div class="description-type2 description-right pdt">※ 온라인컨설팅은 하루 총3건까지 요청이 가능합니다.</div>
+
+              </div>
+
+              <table class="table table-hr">
+
+                <colgroup>
+                  <col style="width:175px;" />
+                  <col style="width:auto;" />
+                </colgroup>
+
+                <tbody>
+                  <tr>
+                    <th><label for="consulting-category">항목</label></th>
+                    <td>
+                      <input type="text" id="consulting-category" class="table-input" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th><label for="consulting-heading">제목</label></th>
+                    <td>
+                      <input type="text" id="consulting-heading" class="table-input full-input" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th><label for="consulting-contents">내용</label></th>
+                    <td>
+                      <textarea id="consulting-contents" class="table-textarea full-input" rows="20"></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th><label for="consulting-file">파일첨부</label></th>
+                    <td>
+                      <input type="file" id="consulting-file" class="table-input" />
+                      <p class="description-type3">첨부 파일의 용량은 파일 당 4.00MB 이하로 총 5개까지 업로드가 가능합니다.</p>
+                      <p class="description-type3">※ exe, zip 등 일부 파일은 업로드 하실 수 없습니다.</p>
+                    </td>
+                  </tr>
+                </tbody>
+
+              </table>
+
+            </div>
+
+            <div class="online-consulting-contents-btn">
+              <button type="button" class="btn btn-green">등록</button>
+              <button type="button" class="btn btn-gray">취소</button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+    </div>
+  </div>
+  <!-- // contents -->
+<!--=include _include/_footer.html -->

@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+.acc{
+
+  &-1depth{
+    width:200px;
+    border:1px solid #ccc;
+
+    &-item{
+      border-top:1px solid #ccc;
+      padding:10px 0 10px 10px;
+
+      &:first-child{
+        border-top:0;
+      }
+    }
+
+    &-link{
+      display:block;
+
+      &:before{
+        content:"\25B6";
+        display:inline-block;
+      }
+
+    }
+
+    &-display{
+      &.on{
+        &:before{
+          content:"\25BC";
+        }
+      }
+    }
+  }
+
+  &-2depth{
+    padding-left:20px;
+
+    &-display{
+
+      display:none;
+
+      &.on{
+        display:block;
+      }
+
+    }
+
+    &-item{
+      margin-top:20px;
+    }
+  }
+
+}
+
+.animate{
+
+  &-1depth-link{
+    &.on{
+      &:before{
+        content:"\25BC";
+      }
+    }
+  }
+
+  &-2depth{
+    overflow:hidden;
+  }
+}
+
+.acc-2depth-transition{
+  overflow:hidden;
+  transition:height 1s ease-out;
+}
+
+.transition-1depth-link{
+
+  &:before{
+    transition:transform 1s ease-out;
+  }
+
+  &.on{
+
+    &:before{
+      transform:rotate(90deg);
+    }
+
+  }
+
+}

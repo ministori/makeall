@@ -1,0 +1,39 @@
+.table{
+  &-input{
+    height:26px;
+    padding:3px 5px;
+    border:1px solid #ccc;
+  }
+
+  &-select{
+    border:1px solid #ccc;
+  }
+
+  &-textarea{
+    display:block;
+    padding:3px 5px;
+    border:1px solid #ccc;
+  }
+
+  .full-input{
+    width:100%;
+  }
+}
+
+.btn{
+
+  width:205px;
+  height:42px;
+
+  font-size:18px;
+  color:#fff;
+
+  &.btn-green{
+    background:#32b6af;
+  }
+
+  &.btn-gray{
+    background:#a8a8a8;
+  }
+
+}

@@ -1,0 +1,54 @@
+.pagenation{
+
+  margin-top:65px;
+
+  text-align:center;
+
+  &-item{
+    display:inline-block;
+    width:35px;
+    height:35px;
+    margin:0 3px;
+
+    line-height:35px;
+
+    &:hover, &.current{
+      background:#231f20;
+
+      color:#fff;
+    }
+  }
+
+  .arrow{
+    position:relative;
+    text-indent:-9999em;
+
+    &:after{
+      content:"";
+      display:inline-block;
+      width:6px;
+      height:10px;
+      background:url(/images/online_consulting/spr_online_consulting_input.png) 0 0 no-repeat;
+      position:absolute;
+      top:12px;
+      left:12px;
+    }
+
+    &:hover{
+      background:none;
+    }
+
+    &.prev{
+      &:after{
+        background-position:-78px 0;
+      }
+    }
+
+    &.next{
+      &:after{
+        background-position:-94px 0;
+      }
+    }
+  }
+
+}

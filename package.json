@@ -1,0 +1,32 @@
+{
+  "name": "makeall",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://ministori@github.com/ministori/pofol.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ministori/pofol/issues"
+  },
+  "homepage": "https://github.com/ministori/pofol#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-convert-encoding": "^1.0.0",
+    "gulp-include": "^2.3.1",
+    "gulp-index": "0.0.8",
+    "gulp-livereload": "^3.8.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-sass-unicode": "^1.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-watch": "^4.3.11",
+    "gulp-webserver": "^0.9.1"
+  }
+}

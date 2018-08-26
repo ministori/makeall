@@ -1,0 +1,28 @@
+.table{
+  width:100%;
+
+  &-hr{
+    border-top:2px solid #000;
+
+    th{
+      padding:13px 20px;
+      border-bottom:1px solid #ccc;
+      background:#f3f3f3;
+
+      font-size:14px;
+      text-align:left;
+    }
+
+    td{
+      padding:11px 20px;
+      border-bottom:1px solid #ccc;
+    }
+  }
+
+
+  &-vt{
+
+  }
+
+
+}

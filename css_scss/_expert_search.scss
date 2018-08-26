@@ -1,0 +1,403 @@
+.expert{
+
+  &-search{
+
+    &-history{
+
+      padding-top:30px;
+      border:1px solid #e5e5e5;
+      border-bottom:0;
+
+      text-align:center;
+
+      &:after{
+        content:"";
+        display:block;
+        clear:both;
+      }
+
+      &-item{
+
+        float:left;
+        width:33.333%;
+
+        box-sizing:border-box;
+
+        text-align:center;
+
+        &:first-child{
+          text-align:right;
+        }
+
+        &:last-child{
+          text-align:left;
+        }
+
+        &>.item-inner{
+
+          display:inline-block;
+
+          text-align:center;
+
+          &>.history-title{
+            font-size:18px;
+            font-weight:300;
+            color:#3b3b3b;
+          }
+
+          &>.history-number{
+            margin:10px auto 15px;
+            font-size:88px;
+            font-weight:bold;
+            color:#3b3b3b;
+          }
+
+        }
+
+      }
+
+    }
+
+    &-option{
+      padding:40px 60px;
+      background:#636c76;
+
+      font-size:18px;
+      font-weight:300;
+      color:#fff;
+
+      &-wrap{
+        &:first-child{
+          padding-bottom:25px;
+          border-bottom:1px solid #828991;
+          margin-bottom:25px;
+        }
+        &:after{
+          content:"";
+          display:block;
+          clear:both;
+        }
+      }
+
+      &-title{
+        width:110px;
+        float:left;
+      }
+
+      &-list{
+        float:left;
+      }
+
+      &-item{
+        margin-right:40px;
+        float:left;
+        position:relative;
+
+        .chk{
+
+          &-input{
+
+            position:absolute;
+            top:0;
+            left:0;
+            margin:1px;
+
+            &:checked + .chk-label:before{
+              background-position:0 0;
+            }
+
+          }
+
+          &-label{
+            display:block;
+            cursor:pointer;
+
+            &:before{
+              content:"";
+              display:inline-block;
+              width:14px;
+              height:14px;
+              margin-right:10px;
+              background:url(/images/online_consulting/spr_online_consulting_input.png) -24px 0 no-repeat;
+              position:relative;
+              top:1px;
+            }
+          }
+        }
+      }
+    }
+
+    &-input{
+      padding:20px 60px;
+      background:#f8f8f8;
+
+      &:after{
+        content:"";
+        display:block;
+        clear:both;
+      }
+    }
+
+    &-text{
+      display:block;
+      width:calc(100% - 390px);
+      height:60px;
+      border:6px solid #000;
+      margin:auto 35px auto 15px;
+
+      float:left;
+
+      box-sizing:border-box;
+
+    }
+
+    &-btn{
+      width:185px;
+      height:60px;
+      background:#3db3e3;
+
+      float:left;
+
+      font-size:24px;
+      color:#fff;
+    }
+
+  }
+
+  &-info{
+
+    padding:3px;
+    border:1px solid #ebebeb;
+    &:after{
+      content:"";
+      display:block;
+      clear:both;
+    }
+
+    &-image{
+      float:left;
+
+      >img{
+        display:block;
+        width:174px;
+        height:204px;
+      }
+    }
+
+    &-text{
+      width:calc(100% - 174px);
+      padding:20px 15px 0 15px;
+      float:left;
+
+      .info{
+
+        &-title{
+          margin-bottom:9px;
+
+          &:after{
+            content:"";
+            display:block;
+            width:100%;
+            height:2px;
+            background:url(/images/online_consulting/spr_online_consulting_input.png) 0 -18px repeat-x;
+          }
+
+        }
+
+        &-name{
+          padding:0 0 5px 4px;
+
+          font-size:16px;
+
+          .strong{
+            font-size:24px;
+            font-weight:bold;
+          }
+        }
+
+        &-detail{
+
+          &:after{
+            content:"";
+            display:block;
+            clear:both;
+          }
+
+          &-list{
+            padding-left:7px;
+
+            &.col2{
+              width:50%;
+              float:left;
+            }
+          }
+
+          &-item{
+            padding-left:7px;
+            margin-bottom:7px;
+            position:relative;
+            box-sizing:border-box;
+
+            &:before{
+              content:"";
+              display:block;
+              width:3px;
+              height:2px;
+              background:url(/images/online_consulting/spr_online_consulting_input.png) -67px 0 no-repeat;
+              position:absolute;
+              top:12px;
+              left:0;
+            }
+
+            &:last-child{
+              margin-bottom:0;
+            }
+
+            .heading{
+              display:inline-block;
+              width:125px;
+              color:#231f20;
+              position:absolute;
+              line-height:1.8;
+            }
+
+            .desc{
+              display:block;
+              padding-left:125px;
+              color:#505050;
+              line-height:1.8;
+            }
+          }
+
+        }
+
+      }
+    }
+
+  }
+
+}
+
+.online-consulting{
+
+  &-area{
+    margin-top:60px;
+  }
+
+  &-contents{
+    margin-top:40px;
+
+    &-top{
+      margin-bottom:5px;
+
+      &:after{
+        content:"";
+        display:block;
+        clear:both;
+      }
+
+      &.border{
+        margin-bottom:20px;
+        padding-bottom:18px;
+        border-bottom:1px solid #d3d3d3;
+      }
+    }
+
+    &-btn{
+      margin-top:25px;
+      text-align:center;
+    }
+  }
+
+
+
+}
+
+.description{
+
+  &:after{
+    content:"";
+    display:block;
+    clear:both;
+  }
+
+  &-type1{
+    font-size:15px;
+
+    >.strong{
+      font-size:24px;
+      color:#f4880a;
+    }
+  }
+
+  &-type2{
+    font-size:13px;
+    color:#666;
+
+    &.pdt{
+      padding-top:10px;
+    }
+  }
+
+  &-type3{
+    font-size:12px;
+    color:#666;
+    margin-top:15px;
+  }
+
+  &-left{
+    float:left;
+    margin-left:10px;
+  }
+
+  &-right{
+    float:right;
+    margin-right:10px;
+  }
+
+}
+
+.list{
+
+  &-type1{
+
+    &:after{
+      content:"";
+      display:block;
+      clear:both;
+    }
+
+    &-item{
+      width:calc(50% - 10px);
+      float:left;
+      margin-right:10px;
+      margin-bottom:20px;
+
+      &:nth-child(2n){
+        margin-right:0;
+        margin-left:10px;
+      }
+
+    }
+
+    &-link{
+      display:block;
+      padding:3px;
+      border:1px solid #ebebeb;
+      border-bottom:1px solid #3b3b3b;
+
+      &:hover{
+        border:1px solid #3b3b3b;
+        box-shadow: 3px 1px 3px #dbdbdb;
+      }
+
+      &:after{
+        content:"";
+        display:block;
+        clear:both;
+      }
+    }
+
+  }
+
+}
