@@ -1,9 +1,10 @@
 <!--=include _include/_header.html -->
   <!-- contents -->
   <div id="real_contents" class="contents">
-    <div class="container">
-      <!-- sub_top -->
-      <div class="sub_top">
+
+    <!-- sub_top -->
+    <div class="sub_top sub-top">
+      <div class="container">
         <ul class="breadcrumb">
           <li><i class="ti-home"></i> HOME</li>
           <li>메이커 소통공간</li>
@@ -12,55 +13,58 @@
         <h2 class="sub_top_tit">메이커 <span class="normal">소통공간</span></h2>
         <p class="sub-top-desc">메이커 스페이스는 메이커분들의 창작활동을 응원합니다.</p>
       </div>
-      <!-- // sub_top -->
-      <!-- 로그인 관련 스크립트 주석처리
-      <script type="text/javascript">
-        function find_string() {
-            var form = document.sub_form;
-            form.page.value = "1";
+    </div>
+    <!-- // sub_top -->
+    <!-- 로그인 관련 스크립트 주석처리
+    <script type="text/javascript">
+      function find_string() {
+          var form = document.sub_form;
+          form.page.value = "1";
 
-            form.submit();
-        }
+          form.submit();
+      }
 
-        function project_tab(category){
-            document.location.href="?tsort=3&msort=8&s_key=&s_type=project_name&category="+category;
-        }
+      function project_tab(category){
+          document.location.href="?tsort=3&msort=8&s_key=&s_type=project_name&category="+category;
+      }
 
-        function write_btn(mode) {
-            var m_id = "";
+      function write_btn(mode) {
+          var m_id = "";
 
-            if(m_id == "") {
-                alert('로그인 후 이용가능합니다.');
-                return;
-            }
-            var szhref = "/network/openingwrite.php?tsort=3&msort=8&s_key=&s_type=project_name&no=&page=1&mode="+mode+"&category=";
+          if(m_id == "") {
+              alert('로그인 후 이용가능합니다.');
+              return;
+          }
+          var szhref = "/network/openingwrite.php?tsort=3&msort=8&s_key=&s_type=project_name&no=&page=1&mode="+mode+"&category=";
 
-            window.open(szhref , "admin_menu2" , "width=900,height=800,scrollbars=yes,resize=yes");
-        }
+          window.open(szhref , "admin_menu2" , "width=900,height=800,scrollbars=yes,resize=yes");
+      }
 
-        function open_write_btn(mode) {
-            var m_id = "";
+      function open_write_btn(mode) {
+          var m_id = "";
 
-            if(m_id == "") {
-                alert('로그인 후 이용가능합니다.');
-                return;
-            }
+          if(m_id == "") {
+              alert('로그인 후 이용가능합니다.');
+              return;
+          }
 
-            document.location.href="/network/openproject.php?tsort=3&msort=8&s_key=&s_type=project_name&no=&page=1&mode=" + mode;
-        }
-    </script>
-      -->
-      <div class="wrap">
-        <div class="contents_wrap">
-          <!-- net_tab -->
-          <div class="net_tab">
-            <a href="" class="on">온라인 컨설팅</a>
-            <p>/</p>
-            <a href="">온라인 컨설팅 사례</a>
-          </div>
-          <!-- // net_tab -->
+          document.location.href="/network/openproject.php?tsort=3&msort=8&s_key=&s_type=project_name&no=&page=1&mode=" + mode;
+      }
+  </script>
+    -->
+    <div class="wrap">
+      <div class="contents_wrap">
+        <!-- net_tab -->
+        <div class="net_tab">
+          <a href="" class="on">온라인 컨설팅</a>
+          <p>/</p>
+          <a href="">온라인 컨설팅 사례</a>
+        </div>
+        <!-- // net_tab -->
 
-          <div class="expert-search-area">
+        <div class="expert-search-area">
+
+          <div class="container">
 
             <div class="expert-search-history">
 
@@ -173,7 +177,11 @@
 
           </div>
 
-          <div class="online-consulting-area">
+        </div>
+
+        <div class="online-consulting-area">
+
+          <div class="container">
 
             <div class="online-consulting-contents">
 
@@ -257,9 +265,8 @@
 
       </div>
 
-
-
     </div>
+
   </div>
   <!-- // contents -->
 <!--=include _include/_footer.html -->

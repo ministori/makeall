@@ -1,6 +1,11 @@
 .paging{
   display:inline-block;
 
+  &-wrap{
+    margin-top:55px;
+    text-align:center;
+  }
+
   &:after{
     content:"";
     display:block;

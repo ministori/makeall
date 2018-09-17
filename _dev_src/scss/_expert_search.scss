@@ -215,62 +215,6 @@
           }
         }
 
-        &-detail{
-
-          &:after{
-            content:"";
-            display:block;
-            clear:both;
-          }
-
-          &-list{
-            padding-left:7px;
-
-            &.col2{
-              width:50%;
-              float:left;
-            }
-          }
-
-          &-item{
-            padding-left:7px;
-            margin-bottom:7px;
-            position:relative;
-            box-sizing:border-box;
-
-            &:before{
-              content:"";
-              display:block;
-              width:3px;
-              height:2px;
-              background:url(/images/online_consulting/spr_online_consulting_input.png) -67px 0 no-repeat;
-              position:absolute;
-              top:12px;
-              left:0;
-            }
-
-            &:last-child{
-              margin-bottom:0;
-            }
-
-            .heading{
-              display:inline-block;
-              width:125px;
-              color:#231f20;
-              position:absolute;
-              line-height:1.8;
-            }
-
-            .desc{
-              display:block;
-              padding-left:125px;
-              color:#505050;
-              line-height:1.8;
-            }
-          }
-
-        }
-
       }
     }
 
@@ -307,6 +251,12 @@
       margin-top:25px;
       text-align:center;
 
+      .btn{
+        display:inline-block;
+        width:200px;
+        font-size:18px;
+      }
+
       &.right{
         text-align:right;
       }
@@ -317,8 +267,6 @@
       text-align:center;
     }
   }
-
-
 
 }
 
@@ -362,51 +310,6 @@
   &-right{
     float:right;
     margin-right:10px;
-  }
-
-}
-
-.list{
-
-  &-type1{
-
-    &:after{
-      content:"";
-      display:block;
-      clear:both;
-    }
-
-    &-item{
-      width:calc(50% - 10px);
-      float:left;
-      margin-right:10px;
-      margin-bottom:20px;
-
-      &:nth-child(2n){
-        margin-right:0;
-        margin-left:10px;
-      }
-
-    }
-
-    &-link{
-      display:block;
-      padding:3px;
-      border:1px solid #ebebeb;
-      border-bottom:1px solid #3b3b3b;
-
-      &:hover{
-        border:1px solid #3b3b3b;
-        box-shadow: 3px 1px 3px #dbdbdb;
-      }
-
-      &:after{
-        content:"";
-        display:block;
-        clear:both;
-      }
-    }
-
   }
 
 }

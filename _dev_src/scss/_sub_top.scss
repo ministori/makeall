@@ -1,0 +1,30 @@
+.sub_top_tit{
+  &>.normal{
+    font-weight:normal;
+  }
+}
+.sub-top{
+  padding:65px 0;
+  background:#f8f8f8;
+  position:static;
+  z-index:initial;
+
+  .breadcrumb{
+    top:-55px;
+    margin-top:initial;
+    font-size:13px;
+  }
+
+  &-desc{
+    font-weight:normal;
+    margin-top:10px;
+  }
+}
+
+.net_tab{
+  width:auto;
+  height:60px;
+  font-size:10px;
+  line-height:60px;
+  margin-bottom:0;
+}

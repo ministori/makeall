@@ -1,0 +1,72 @@
+.ui-datepicker{
+  top:445px !important;
+  border:1px solid #3db3e3;
+  border-radius:0;
+
+  &-header{
+    border:0;
+    background:0;
+  }
+
+  .ui-datepicker{
+    &-prev{
+      span{
+        margin-left:-4px;
+        margin-top:-6px;
+      }
+    }
+    &-next{
+      span{
+        margin-left:-4px;
+        margin-top:-6px;
+        background-position:-17px 0;
+      }
+    }
+    &-title {
+      margin: 0 2.3em;
+      line-height: 29px;
+      text-align: center;
+      color: #2e4c82;
+      font-size: 12px;
+      font-weight: normal;
+      font-family: "NanumSquare", sans-serif;
+    }
+  }
+
+  th{
+    padding: .7em .3em;
+    text-align: center;
+    border: 0;
+    font-size: 12px;
+    font-family: "NanumSquare", sans-serif;
+    color:#99bc61;
+
+    &.ui-datepicker-week-end{
+      span[title=Sunday]{
+        color:#ee3232;
+      }
+    }
+  }
+}
+
+.ui-widget-header .ui-icon{
+  width:7px;
+  height:12px;
+  background:url(/images/common/date_prev_next.png) no-repeat;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+  border:0;
+  background:none;
+  color:#61676b;
+  font-size: 12px;
+  font-family: "NanumSquare", sans-serif;
+  text-align:center;
+  line-height:24px;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active{
+  background:#ff0000;
+  color:#fff;
+  font-weight:700;
+}

@@ -91,6 +91,12 @@ $selectric-font-size:       12px !default;                                      
         height:54px;
         background:none;
         line-height:54px;
+
+        &:after{
+          border:6px solid transparent;
+          border-top-color:#000;
+          border-bottom:0;
+        }
       }
 
       &-items{
@@ -105,8 +111,124 @@ $selectric-font-size:       12px !default;                                      
       }
     }
 
+  }
+
+  &-space-search-select{
+    position:static;
+
+    &.selectric-float{
+
+      .selectric-items{
+
+        li{
+          float:left;
+        }
+
+      }
+
+      &.selectric-above{
+        .selectric-items{
+          top:auto;
+          bottom:91px;
+        }
+      }
+
+      .selectric-scroll{
+        padding: 15px 37px;
+      }
+
+    }
+
+    .selectric{
+      border:0;
+      background:#fff;
+
+      .label{
+        height:32px;
+        line-height:initial;
+        font-size:28px;
+        margin:0 0 0 18px;
+        font-weight:700;
+      }
+
+      .button{
+        width:32px;
+        height:32px;
+        margin:0 10px 0 0;
+        background:#fff;
+        line-height:38px;
+
+        &:after{
+          border:7px solid transparent;
+          border-top-color: #000
+        }
+      }
+
+      &-items{
+        top:90px;
+        border: 1px solid #3db3e3;
+        background: #fff;
+        text-align: center;
+        padding: 15px 0;
+        z-index:99;
+
+        li{
+          font-size:14px;
+          padding:15px 10px;
+        }
+      }
+
+    }
 
   }
+
+  &-select-type1{
+    //width:100px;
+    padding-left: 20px;
+    background: #fff;
+    box-sizing: content-box;
+
+    .selectric{
+      border:0;
+      border-bottom:2px solid #000;
+      background:none;
+
+      .label{
+        height:31px;
+        margin:0 25px 0 10px;
+        font-size:15px;
+        line-height:31px;
+      }
+
+      .button{
+        width:25px;
+        height:31px;
+        background:none;
+        line-height:31px;
+
+        &:after{
+          border:4px solid transparent;
+          border-top-color:#000;
+          border-bottom:0;
+        }
+      }
+
+      &-items{
+        background:#fff;
+        left:auto;
+        right:0;
+
+        li{
+          &.highlighted {
+            background: #636c76;
+            color: #fff;
+          }
+        }
+      }
+    }
+
+  }
+
 }
 
 .selectric-focus .selectric {
@@ -235,19 +357,19 @@ $selectric-font-size:       12px !default;                                      
     cursor: pointer;
 
     &.selected {
-      background: #E0E0E0;
-      color: #444;
+      background: #f00;
+      color: #fff;
     }
 
     &.highlighted {
-      background: #D0D0D0;
-      color: #444;
+      background: #f00;
+      color: #fff;
     }
 
-    &:hover {
-      background: #D5D5D5;
-      color: #444;
-    }
+    //&:hover {
+    //  background: #D5D5D5;
+    //  color: #444;
+    //}
   }
 
   .disabled {

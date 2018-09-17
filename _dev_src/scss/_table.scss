@@ -34,10 +34,12 @@
 
     td{
       height:40px;
+      padding:10px 0;
       border-bottom:1px solid #ccc;
       font-size:13px;
       color:#666;
-      vertical-align:middle;
+      line-height:1.4;
+      vertical-align:top;
     }
 
   }
@@ -50,6 +52,10 @@
     &-center{
       text-align:center;
     }
+  }
+
+  .text-blue{
+    color:#3235b6;
   }
 
   .multi-line{
