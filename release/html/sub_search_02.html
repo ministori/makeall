@@ -487,263 +487,232 @@
     </script>
     <!-- // header -->
   <!-- contents -->
-  <div id="real_contents" class="contents">
-
-    <!-- sub_top -->
-    <div class="sub_top sub-top">
-      <div class="container">
-        <ul class="breadcrumb">
-          <li><i class="ti-home"></i> HOME</li>
-          <li>메이커 소통공간</li>
-          <li>온라인 컨설팅</li>
-        </ul>
-        <h2 class="sub_top_tit">메이커 <span class="normal">소통공간</span></h2>
-        <p class="sub-top-desc">메이커 스페이스는 메이커분들의 창작활동을 응원합니다.</p>
-      </div>
-    </div>
-    <!-- // sub_top -->
-    <!-- 로그인 관련 스크립트 주석처리
-    <script type="text/javascript">
-      function find_string() {
-          var form = document.sub_form;
-          form.page.value = "1";
-
-          form.submit();
-      }
-
-      function project_tab(category){
-          document.location.href="?tsort=3&msort=8&s_key=&s_type=project_name&category="+category;
-      }
-
-      function write_btn(mode) {
-          var m_id = "";
-
-          if(m_id == "") {
-              alert('로그인 후 이용가능합니다.');
-              return;
-          }
-          var szhref = "/network/openingwrite.php?tsort=3&msort=8&s_key=&s_type=project_name&no=&page=1&mode="+mode+"&category=";
-
-          window.open(szhref , "admin_menu2" , "width=900,height=800,scrollbars=yes,resize=yes");
-      }
-
-      function open_write_btn(mode) {
-          var m_id = "";
-
-          if(m_id == "") {
-              alert('로그인 후 이용가능합니다.');
-              return;
-          }
-
-          document.location.href="/network/openproject.php?tsort=3&msort=8&s_key=&s_type=project_name&no=&page=1&mode=" + mode;
-      }
-  </script>
-    -->
-    <div class="wrap">
-      <div class="contents_wrap">
-        <!-- net_tab -->
-        <div class="net_tab">
-          <a href="" class="on">온라인 컨설팅</a>
-          <p>/</p>
-          <a href="">온라인 컨설팅 사례</a>
+  <div id="real_contents" class="contents space-search no-padding-bottom">
+    <!--<div class="container">-->
+      <!-- sub_top -->
+      <div class="sub_top sub-top">
+        <div class="container">
+          <ul class="breadcrumb">
+            <li><i class="ti-home"></i> HOME</li>
+            <li>메이커 스페이스 검색/예약</li>
+          </ul>
+          <h2 class="sub_top_tit">메이커 <span class="normal">스페이스 검색/예약</span></h2>
+          <p class="sub-top-desc">메이커 스페이스는 메이커 분들의 창작활동을 응원합니다.</p>
         </div>
-        <!-- // net_tab -->
+      </div>
+      <!-- // sub_top -->
+      <!-- 로그인 관련 스크립트 주석처리
+      <script type="text/javascript">
+        function find_string() {
+            var form = document.sub_form;
+            form.page.value = "1";
 
-        <div class="expert-search-area">
+            form.submit();
+        }
 
-          <div class="container">
+        function project_tab(category){
+            document.location.href="?tsort=3&msort=8&s_key=&s_type=project_name&category="+category;
+        }
 
-            <div class="expert-search-history">
+        function write_btn(mode) {
+            var m_id = "";
 
-              <div class="expert-search-history-item">
-                <div class="item-inner">
-                  <div class="history-title">전문가 수</div>
-                  <div class="history-number">99999</div>
-                </div>
+            if(m_id == "") {
+                alert('로그인 후 이용가능합니다.');
+                return;
+            }
+            var szhref = "/network/openingwrite.php?tsort=3&msort=8&s_key=&s_type=project_name&no=&page=1&mode="+mode+"&category=";
+
+            window.open(szhref , "admin_menu2" , "width=900,height=800,scrollbars=yes,resize=yes");
+        }
+
+        function open_write_btn(mode) {
+            var m_id = "";
+
+            if(m_id == "") {
+                alert('로그인 후 이용가능합니다.');
+                return;
+            }
+
+            document.location.href="/network/openproject.php?tsort=3&msort=8&s_key=&s_type=project_name&no=&page=1&mode=" + mode;
+        }
+    </script>
+      -->
+      <div class="wrap">
+        <div class="contents_wrap">
+
+          <div class="space-search-area">
+
+            <div class="container">
+
+              <div class="space-search-input-wrap">
+                <input type="text" class="space-search-input" title="주소를 입력해주세요 근처의 메이커스페이스를 찾아드립니다." placeholder="주소를 입력해주세요 근처의 메이커스페이스를 찾아드립니다." />
+                <button type="button" class="space-search-btn">검색</button>
               </div>
 
-              <div class="expert-search-history-item">
-                <div class="item-inner">
-                  <div class="history-title">해결한 문제 수</div>
-                  <div class="history-number">99</div>
-                </div>
-              </div>
+              <div class="space-search-select-area">
 
-              <div class="expert-search-history-item">
-                <div class="item-inner">
-                  <div class="history-title">컨설팅 요청 수</div>
-                  <div class="history-number">999</div>
+                <div class="space-search-select-wrap">
+                  <label class="space-search-select-heading" for="service-select">제공서비스</label>
+                  <select class="space-search-select" id="service-select">
+                    <option>장비예약</option>
+                    <option>공간예약</option>
+                    <option>교육예약</option>
+                    <option>행사예약</option>
+                  </select>
                 </div>
+                <div class="space-search-select-wrap">
+                  <label class="space-search-select-heading" for="local-select">지역 선택</label>
+                  <select class="space-search-select float" id="local-select">
+                    <option>서울</option>
+                    <option>강원</option>
+                    <option>경기</option>
+                    <option>경남</option>
+                    <option>경북</option>
+                    <option>광주</option>
+
+                    <option>대구</option>
+                    <option>대전</option>
+                    <option>부산</option>
+                    <option>세종</option>
+                    <option>울산</option>
+                    <option>인천</option>
+
+                    <option>전남</option>
+                    <option>전북</option>
+                    <option>제주</option>
+                    <option>충남</option>
+                    <option>충북</option>
+                    <option>전국</option>
+                  </select>
+                </div>
+                <div class="space-search-select-wrap full-width-item">
+                  <label class="space-search-select-heading" for="tool-select">장비 선택</label>
+                  <select class="space-search-select float" id="tool-select">
+                    <option>3D 프린터</option>
+                    <option>비닐커터</option>
+                    <option>드릴프레스</option>
+                    <option>목공선반</option>
+                    <option>종이제단기</option>
+                    <option>스핀들샌더</option>
+                    <option>UV평판프린터</option>
+                    <option>3D스캐너</option>
+                    <option>플로터</option>
+                    <option>용접기</option>
+                    <option>진공성형기</option>
+                    <option>워터젯</option>
+                    <option>플라즈마아크릴용해로</option>
+                    <option>회전쏘</option>
+                    <option>레이저커터</option>
+                    <option>그라인더</option>
+                    <option>밴드쏘</option>
+                    <option>프레스</option>
+                    <option>트리머</option>
+                    <option>암연기</option>
+                    <option>각끌기</option>
+                    <option>CNC</option>
+                    <option>스크롤쏘</option>
+                    <option>디지털조각기</option>
+                    <option>디스크샌더</option>
+                    <option>스카시쏘</option>
+                    <option>플라즈마커팅기</option>
+                    <option>와인더</option>
+                    <option>3D펜</option>
+                    <option>열선커터기</option>
+                    <option>각도조절기</option>
+                    <option>라우터</option>
+                    <option>평판프린터</option>
+                    <option>연마기</option>
+                    <option>절곡기</option>
+                    <option>테이블쏘</option>
+                    <option>오실로스코프</option>
+                    <option>자동대패</option>
+                    <option>직쏘</option>
+                    <option>아크릴벤딩기</option>
+                    <option>함수발생기</option>
+                    <option>방전가공기</option>
+                    <option>진공가열로</option>
+                    <option>밴딩기</option>
+                    <option>진공아크릴용해로</option>
+                    <option>벌트샌더</option>
+                    <option>갈날커팅기</option>
+                    <option>샵트</option>
+                    <option>선반(Lathe)</option>
+                    <option>진공금속용해로</option>
+                  </select>
+                </div>
+                <div class="space-search-select-wrap date start">
+                  <label class="space-search-select-heading" for="start-date-select">시작일 선택</label>
+                  <div class="space-search-select-body">
+                    <input type="text" id="start-date-select" class="space-search-input-date start" />
+                    <button type="button" class="space-search-btn-date start">달력보기</button>
+                  </div>
+                </div>
+                <div class="space-search-select-wrap date end">
+                  <label class="space-search-select-heading" for="end-date-select">종료일 선택</label>
+                  <div class="space-search-select-body">
+                    <input type="text" id="end-date-select" class="space-search-input-date end" />
+                    <button type="button" class="space-search-btn-date end">달력보기</button>
+                  </div>
+                </div>
+
+                <button type="button" class="space-search-select-btn">검색</button>
+
               </div>
+              <script>
+                $(function(){
+
+                  $('.space-search-select').selectric({
+                    maxHeight: 200
+                  });
+
+                  $('.space-search-input-date').datepicker({
+                    dateFormat: 'yy-mm-dd',
+                    dayNamesMin:['S', 'M', 'T', 'W', 'T', 'F', 'S'],
+                    showMonthAfterYear: true,
+                    monthNames:['. 01', '. 02', '. 03', '. 04', '. 05', '. 06', '. 07', '. 08', '. 09', '. 10', '. 11', '. 12'],
+                    showButtonPanel: true,
+                    gotoCurrent: true,
+                  }).datepicker('setDate', new Date());
+
+                  $('.space-search-btn-date.start').on('click', function(){
+
+                    $('.space-search-input-date.start').datepicker('show');
+
+                  });
+
+                  $('.space-search-btn-date.end').on('click', function(){
+
+                    $('.space-search-input-date.end').datepicker('show');
+
+                  });
+
+                });
+              </script>
 
             </div>
-
-            <div class="expert-search-option">
-              <div class="expert-search-option-wrap">
-                <div class="expert-search-option-title">분류</div>
-                <ul class="expert-search-option-list">
-                  <li class="expert-search-option-item">
-                    <input type="checkbox" id="expert-search-chk-edu" class="chk-input"/>
-                    <label for="expert-search-chk-edu" class="chk-label">교육</label>
-                  </li>
-                  <li class="expert-search-option-item">
-                    <input type="checkbox" id="expert-search-chk-culture" class="chk-input"/>
-                    <label for="expert-search-chk-culture" class="chk-label">문화</label>
-                  </li>
-                  <li class="expert-search-option-item">
-                    <input type="checkbox" id="expert-search-chk-environment" class="chk-input"/>
-                    <label for="expert-search-chk-environment" class="chk-label">환경</label>
-                  </li>
-                  <li class="expert-search-option-item">
-                    <input type="checkbox" id="expert-search-chk-energy" class="chk-input"/>
-                    <label for="expert-search-chk-energy" class="chk-label">에너지</label>
-                  </li>
-                  <li class="expert-search-option-item">
-                    <input type="checkbox" id="expert-search-chk-safety" class="chk-input"/>
-                    <label for="expert-search-chk-safety" class="chk-label">안전</label>
-                  </li>
-                  <li class="expert-search-option-item">
-                    <input type="checkbox" id="expert-search-chk-medical" class="chk-input"/>
-                    <label for="expert-search-chk-medical" class="chk-label">의료</label>
-                  </li>
-                  <li class="expert-search-option-item">
-                    <input type="checkbox" id="expert-search-chk-welfare" class="chk-input"/>
-                    <label for="expert-search-chk-welfare" class="chk-label">복지</label>
-                  </li>
-                  <li class="expert-search-option-item">
-                    <input type="checkbox" id="expert-search-chk-ict" class="chk-input"/>
-                    <label for="expert-search-chk-ict" class="chk-label">정보통신</label>
-                  </li>
-                </ul>
-              </div>
-              <div class="expert-search-option-wrap">
-                <div class="expert-search-option-title">전문분야</div>
-                <ul class="expert-search-option-list">
-                  <li class="expert-search-option-item">
-                    <input type="checkbox" id="expert-search-chk-idea" class="chk-input"/>
-                    <label for="expert-search-chk-idea" class="chk-label">아이디어 구체화/기술개발</label>
-                  </li>
-                  <li class="expert-search-option-item">
-                    <input type="checkbox" id="expert-search-chk-intellectual" class="chk-input"/>
-                    <label for="expert-search-chk-intellectual" class="chk-label">지식재산권 권리화</label>
-                  </li>
-                  <li class="expert-search-option-item">
-                    <input type="checkbox" id="expert-search-chk-prototype" class="chk-input"/>
-                    <label for="expert-search-chk-prototype" class="chk-label">시제품 제작</label>
-                  </li>
-                  <li class="expert-search-option-item">
-                    <input type="checkbox" id="expert-search-chk-bm" class="chk-input"/>
-                    <label for="expert-search-chk-bm" class="chk-label">BM/사업계획서 작성</label>
-                  </li>
-                  <li class="expert-search-option-item">
-                    <input type="checkbox" id="expert-search-chk-marketing" class="chk-input"/>
-                    <label for="expert-search-chk-marketing" class="chk-label">마케팅</label>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="expert-search-input">
-
-              <select class="expert-search-select" title="분야선택">
-                <option>전체1</option>
-                <option>전체2</option>
-                <option>전체3</option>
-              </select>
-
-              <input type="text" class="expert-search-text" title="전문가 입력" />
-
-              <button type="button" class="expert-search-btn">전문가 검색</button>
-
-            </div>
-            <script>
-              $(function(){
-                $('.expert-search-select').selectric();
-              });
-            </script>
 
           </div>
 
-        </div>
+          <!-- net_tab -->
+          <div class="net_tab">
+            <a href="">내 주변 메이커 스페이스</a>
+            <p>/</p>
+            <a href="" class="on">메이커 스페이스 맵</a>
+            <p>/</p>
+            <a href="">인기 메이커 스페이스</a>
+            <p>/</p>
+            <a href="">추천 메이커 교육</a>
+            <p>/</p>
+            <a href="">메이커스 네트워크</a>
+          </div>
+          <!-- // net_tab -->
 
-        <div class="online-consulting-area">
+          <div class="space-all-map">
 
-          <div class="container">
-
-            <div class="online-consulting-contents">
-
-              <div class="online-consulting-contents-top">
-
-                <div class="description-type1 description-left">
-                  <span>총</span>
-                  <span class="strong">543</span>
-                  <span>개의 사례가 있습니다.</span>
-                </div>
-
-              </div>
-
-              <table class="table table-vt">
-
-                <colgroup>
-                  <col style="width:50px;" />
-                  <col style="width:80px;" />
-                  <col style="width:200px;" />
-                  <col style="width:auto;" />
-                  <col style="width:100px;" />
-                  <col style="width:120px;" />
-
-                </colgroup>
-
-                <thead>
-                <th>번호</th>
-                <th>분류</th>
-                <th class="table-cell-left">전문분야</th>
-                <th class="table-cell-left">제목</th>
-                <th>전문가</th>
-                <th>작성일</th>
-                </thead>
-
-                <tbody>
-                <tr>
-                  <td class="table-cell-center">10</td>
-                  <td class="table-cell-center">IOT</td>
-                  <td>아이디어 구체화/기술개발</td>
-                  <td>아두이노와 센서를 결합한 문고리 개발</td>
-                  <td class="table-cell-center">송치완</td>
-                  <td class="table-cell-center">2018.12.23</td>
-                </tr>
-                <tr>
-                  <td class="table-cell-center">9</td>
-                  <td class="table-cell-center">문화</td>
-                  <td>메이커 창업</td>
-                  <td>1인 메이커 창업 관련 문의</td>
-                  <td class="table-cell-center">조경민</td>
-                  <td class="table-cell-center">2018.12.23</td>
-                </tr>
-                </tbody>
-
-              </table>
-
-            </div>
-
-            <div class="online-consulting-contents-paging">
-
-              <div class="paging">
-                <button type="button" class="paging-item arrow prev">이전</button>
-                <!-- 현재 페이지 current 클래스 표기 -->
-                <a href="#" class="paging-item current">1</a>
-                <a href="#" class="paging-item">2</a>
-                <a href="#" class="paging-item">3</a>
-                <a href="#" class="paging-item">4</a>
-                <a href="#" class="paging-item">5</a>
-                <a href="#" class="paging-item">6</a>
-                <a href="#" class="paging-item">7</a>
-                <a href="#" class="paging-item">8</a>
-                <a href="#" class="paging-item">9</a>
-                <a href="#" class="paging-item">10</a>
-                <button type="button" class="paging-item arrow next">다음</button>
-              </div>
-
+            <!-- [D] 개발시 삭제 필요 -->
+            <div style="text-align:center">
+              <img src="/images/search/temp_all_map.jpg" style="width:100%; display:block;" />
             </div>
 
           </div>
@@ -752,8 +721,7 @@
 
       </div>
 
-    </div>
-
+    <!--</div>-->
   </div>
   <!-- // contents -->
 <!-- footer-->

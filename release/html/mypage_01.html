@@ -494,11 +494,9 @@
       <div class="container">
         <ul class="breadcrumb">
           <li><i class="ti-home"></i> HOME</li>
-          <li>메이커 소통공간</li>
-          <li>온라인 컨설팅</li>
+          <li>마이페이지</li>
         </ul>
-        <h2 class="sub_top_tit">메이커 <span class="normal">소통공간</span></h2>
-        <p class="sub-top-desc">메이커 스페이스는 메이커분들의 창작활동을 응원합니다.</p>
+        <h2 class="sub_top_tit">마이<span class="normal">페이지</span></h2>
       </div>
     </div>
     <!-- // sub_top -->
@@ -549,121 +547,28 @@
         </div>
         <!-- // net_tab -->
 
-        <div class="expert-search-area">
+        <div class="container">
+          <div class="space-info-tab-wrap">
 
-          <div class="container">
-
-            <div class="expert-search-history">
-
-              <div class="expert-search-history-item">
-                <div class="item-inner">
-                  <div class="history-title">전문가 수</div>
-                  <div class="history-number">99999</div>
-                </div>
-              </div>
-
-              <div class="expert-search-history-item">
-                <div class="item-inner">
-                  <div class="history-title">해결한 문제 수</div>
-                  <div class="history-number">99</div>
-                </div>
-              </div>
-
-              <div class="expert-search-history-item">
-                <div class="item-inner">
-                  <div class="history-title">컨설팅 요청 수</div>
-                  <div class="history-number">999</div>
-                </div>
-              </div>
-
-            </div>
-
-            <div class="expert-search-option">
-              <div class="expert-search-option-wrap">
-                <div class="expert-search-option-title">분류</div>
-                <ul class="expert-search-option-list">
-                  <li class="expert-search-option-item">
-                    <input type="checkbox" id="expert-search-chk-edu" class="chk-input"/>
-                    <label for="expert-search-chk-edu" class="chk-label">교육</label>
-                  </li>
-                  <li class="expert-search-option-item">
-                    <input type="checkbox" id="expert-search-chk-culture" class="chk-input"/>
-                    <label for="expert-search-chk-culture" class="chk-label">문화</label>
-                  </li>
-                  <li class="expert-search-option-item">
-                    <input type="checkbox" id="expert-search-chk-environment" class="chk-input"/>
-                    <label for="expert-search-chk-environment" class="chk-label">환경</label>
-                  </li>
-                  <li class="expert-search-option-item">
-                    <input type="checkbox" id="expert-search-chk-energy" class="chk-input"/>
-                    <label for="expert-search-chk-energy" class="chk-label">에너지</label>
-                  </li>
-                  <li class="expert-search-option-item">
-                    <input type="checkbox" id="expert-search-chk-safety" class="chk-input"/>
-                    <label for="expert-search-chk-safety" class="chk-label">안전</label>
-                  </li>
-                  <li class="expert-search-option-item">
-                    <input type="checkbox" id="expert-search-chk-medical" class="chk-input"/>
-                    <label for="expert-search-chk-medical" class="chk-label">의료</label>
-                  </li>
-                  <li class="expert-search-option-item">
-                    <input type="checkbox" id="expert-search-chk-welfare" class="chk-input"/>
-                    <label for="expert-search-chk-welfare" class="chk-label">복지</label>
-                  </li>
-                  <li class="expert-search-option-item">
-                    <input type="checkbox" id="expert-search-chk-ict" class="chk-input"/>
-                    <label for="expert-search-chk-ict" class="chk-label">정보통신</label>
-                  </li>
-                </ul>
-              </div>
-              <div class="expert-search-option-wrap">
-                <div class="expert-search-option-title">전문분야</div>
-                <ul class="expert-search-option-list">
-                  <li class="expert-search-option-item">
-                    <input type="checkbox" id="expert-search-chk-idea" class="chk-input"/>
-                    <label for="expert-search-chk-idea" class="chk-label">아이디어 구체화/기술개발</label>
-                  </li>
-                  <li class="expert-search-option-item">
-                    <input type="checkbox" id="expert-search-chk-intellectual" class="chk-input"/>
-                    <label for="expert-search-chk-intellectual" class="chk-label">지식재산권 권리화</label>
-                  </li>
-                  <li class="expert-search-option-item">
-                    <input type="checkbox" id="expert-search-chk-prototype" class="chk-input"/>
-                    <label for="expert-search-chk-prototype" class="chk-label">시제품 제작</label>
-                  </li>
-                  <li class="expert-search-option-item">
-                    <input type="checkbox" id="expert-search-chk-bm" class="chk-input"/>
-                    <label for="expert-search-chk-bm" class="chk-label">BM/사업계획서 작성</label>
-                  </li>
-                  <li class="expert-search-option-item">
-                    <input type="checkbox" id="expert-search-chk-marketing" class="chk-input"/>
-                    <label for="expert-search-chk-marketing" class="chk-label">마케팅</label>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="expert-search-input">
-
-              <select class="expert-search-select" title="분야선택">
-                <option>전체1</option>
-                <option>전체2</option>
-                <option>전체3</option>
-              </select>
-
-              <input type="text" class="expert-search-text" title="전문가 입력" />
-
-              <button type="button" class="expert-search-btn">전문가 검색</button>
-
-            </div>
-            <script>
-              $(function(){
-                $('.expert-search-select').selectric();
-              });
-            </script>
+            <ul class="space-info-tab">
+              <li class="space-info-tab-item">
+                <a href="#" class="space-info-tab-link on">전체</a>
+              </li>
+              <li class="space-info-tab-item">
+                <a href="#" class="space-info-tab-link">장비 예약</a>
+              </li>
+              <li class="space-info-tab-item">
+                <a href="#" class="space-info-tab-link">공간 예약</a>
+              </li>
+              <li class="space-info-tab-item">
+                <a href="#" class="space-info-tab-link">교육 예약</a>
+              </li>
+              <li class="space-info-tab-item">
+                <a href="#" class="space-info-tab-link">행사 예약</a>
+              </li>
+            </ul>
 
           </div>
-
         </div>
 
         <div class="online-consulting-area">
@@ -677,7 +582,7 @@
                 <div class="description-type1 description-left">
                   <span>총</span>
                   <span class="strong">543</span>
-                  <span>개의 사례가 있습니다.</span>
+                  <span>개의 내역이 있습니다.</span>
                 </div>
 
               </div>
@@ -686,40 +591,52 @@
 
                 <colgroup>
                   <col style="width:50px;" />
-                  <col style="width:80px;" />
-                  <col style="width:200px;" />
-                  <col style="width:auto;" />
                   <col style="width:100px;" />
                   <col style="width:120px;" />
-
+                  <col style="width:150px;" />
+                  <col style="width:auto;" />
+                  <col style="width:130px;" />
+                  <col style="width:150px;" />
+                  <col style="width:120px;" />
                 </colgroup>
 
                 <thead>
                 <th>번호</th>
-                <th>분류</th>
-                <th class="table-cell-left">전문분야</th>
-                <th class="table-cell-left">제목</th>
-                <th>전문가</th>
-                <th>작성일</th>
+                <th>구분</th>
+                <th class="table-cell-left">신청일</th>
+                <th class="table-cell-left">예약대상</th>
+                <th class="table-cell-left">메이커스페이스</th>
+                <th class="table-cell-left">예약일</th>
+                <th class="table-cell-left">회차</th>
+                <th>상태</th>
                 </thead>
 
                 <tbody>
                 <tr>
                   <td class="table-cell-center">10</td>
-                  <td class="table-cell-center">IOT</td>
-                  <td>아이디어 구체화/기술개발</td>
-                  <td>아두이노와 센서를 결합한 문고리 개발</td>
-                  <td class="table-cell-center">송치완</td>
-                  <td class="table-cell-center">2018.12.23</td>
+                  <td class="table-cell-center">장비</td>
+                  <td>2018-07-12</td>
+                  <td class="text-blue">3D프린터</td>
+                  <td class="text-blue">스포츠융복합산업지원센터 MAKERS LAB</td>
+                  <td>2018.12.23</td>
+                  <td>3회차(11:00 ~ 12:00)</td>
+                  <td class="table-cell-center">예약취소</td>
                 </tr>
                 <tr>
-                  <td class="table-cell-center">9</td>
-                  <td class="table-cell-center">문화</td>
-                  <td>메이커 창업</td>
-                  <td>1인 메이커 창업 관련 문의</td>
-                  <td class="table-cell-center">조경민</td>
-                  <td class="table-cell-center">2018.12.23</td>
+                  <td class="table-cell-center">10</td>
+                  <td class="table-cell-center">장비</td>
+                  <td>2018-07-12</td>
+                  <td class="text-blue">3D프린터</td>
+                  <td class="text-blue">스포츠융복합산업지원센터 MAKERS LAB</td>
+                  <td>2018.12.23</td>
+                  <td>
+                    3회차(11:00 ~ 12:00)<br/>
+                    3회차(11:00 ~ 12:00)<br/>
+                    3회차(11:00 ~ 12:00)<br/>
+                  </td>
+                  <td class="table-cell-center">예약취소</td>
                 </tr>
+
                 </tbody>
 
               </table>
