@@ -1,0 +1,213 @@
+<!--=include _include/_header.html -->
+  <!-- contents -->
+  <div id="real_contents" class="contents">
+
+    <!-- sub_top -->
+    <div class="sub_top sub-top">
+      <div class="container">
+        <ul class="breadcrumb">
+          <li><i class="ti-home"></i> HOME</li>
+          <li>마이페이지</li>
+        </ul>
+        <h2 class="sub_top_tit">마이<span class="normal">페이지</span></h2>
+      </div>
+    </div>
+    <!-- // sub_top -->
+    <!-- 로그인 관련 스크립트 주석처리
+    <script type="text/javascript">
+      function find_string() {
+          var form = document.sub_form;
+          form.page.value = "1";
+
+          form.submit();
+      }
+
+      function project_tab(category){
+          document.location.href="?tsort=3&msort=8&s_key=&s_type=project_name&category="+category;
+      }
+
+      function write_btn(mode) {
+          var m_id = "";
+
+          if(m_id == "") {
+              alert('로그인 후 이용가능합니다.');
+              return;
+          }
+          var szhref = "/network/openingwrite.php?tsort=3&msort=8&s_key=&s_type=project_name&no=&page=1&mode="+mode+"&category=";
+
+          window.open(szhref , "admin_menu2" , "width=900,height=800,scrollbars=yes,resize=yes");
+      }
+
+      function open_write_btn(mode) {
+          var m_id = "";
+
+          if(m_id == "") {
+              alert('로그인 후 이용가능합니다.');
+              return;
+          }
+
+          document.location.href="/network/openproject.php?tsort=3&msort=8&s_key=&s_type=project_name&no=&page=1&mode=" + mode;
+      }
+  </script>
+    -->
+    <div class="wrap">
+      <div class="contents_wrap">
+        <!-- net_tab -->
+        <div class="net_tab">
+          <a href="">나의 예약/신청 내역</a>
+          <p>/</p>
+          <a href="">나의 만족도 평가</a>
+          <p>/</p>
+          <a href="">나의 컨설팅 내역</a>
+          <p>/</p>
+          <a href="" class="on">온라인 컨설팅 관리</a>
+        </div>
+        <!-- // net_tab -->
+
+        <div class="online-consulting-area">
+
+          <div class="container">
+
+            <div class="expert-search-history outline">
+
+              <div class="expert-search-history-item quarter">
+                <div class="item-inner">
+                  <div class="history-title">답변대기</div>
+                  <div class="history-number"><span class="strong-red">99999</span></div>
+                </div>
+              </div>
+
+              <div class="expert-search-history-item quarter">
+                <div class="item-inner">
+                  <div class="history-title">신청건수</div>
+                  <div class="history-number">99</div>
+                </div>
+              </div>
+
+              <div class="expert-search-history-item quarter">
+                <div class="item-inner">
+                  <div class="history-title">답변건수</div>
+                  <div class="history-number">999</div>
+                </div>
+              </div>
+
+              <div class="expert-search-history-item quarter">
+                <div class="item-inner">
+                  <div class="history-title">추천건수</div>
+                  <div class="history-number">999</div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="online-consulting-contents">
+
+              <div class="online-consulting-contents-top">
+
+                <div class="f-right">
+
+                  <div class="f-left w130 mr10">
+                    <select class="select-type1" title="분야선택">
+                      <option>전체1</option>
+                      <option>전체2</option>
+                      <option>전체3</option>
+                    </select>
+                  </div>
+
+                  <input type="text" class="search-text-type1 w300 f-left mr10" title="검색어 입력" />
+
+                  <button type="button" class="btn btn-skyblue search-type1 w110 f-left mr10">검색</button>
+
+                </div>
+
+                <script>
+                  $(function(){
+                    $('.select-type1').selectric();
+                  });
+                </script>
+
+              </div>
+
+              <table class="table table-vt">
+
+                <colgroup>
+                  <col style="width:70px;" />
+                  <col style="width:120px;" />
+                  <col style="width:auto;" />
+                  <col style="width:130px;" />
+                  <col style="width:200px;" />
+                  <col style="width:130px;" />
+                </colgroup>
+
+                <thead>
+                <th>번호</th>
+                <th class="table-cell-left">등록일</th>
+                <th class="table-cell-left">제목</th>
+                <th>신청자</th>
+                <th>상태</th>
+                <th>응답 시간</th>
+                </thead>
+
+                <tbody>
+                <tr>
+                  <td class="table-cell-center">10</td>
+                  <td>2018-07-12</td>
+                  <td>아두이노와 센서를 결합한 문고리 개발</td>
+                  <td class="table-cell-center">홍길동</td>
+                  <td class="table-cell-center"><button type="button" class="status-type status-btn border-skyblue">신청완료</button></td>
+                  <td class="table-cell-center">-</td>
+                </tr>
+                <tr>
+                  <td class="table-cell-center">10</td>
+                  <td>2018-07-12</td>
+                  <td><a href="#" class="text-blue">1인 메이커 창업관련 문의</a></td>
+                  <td class="table-cell-center">홍길동</td>
+                  <td class="table-cell-center">답변완료</td>
+                  <td class="table-cell-center">30분</td>
+                </tr>
+                <tr>
+                  <td class="table-cell-center">10</td>
+                  <td>2018-07-12</td>
+                  <td><a href="#" class="text-blue">1인 메이커 창업관련 문의</a></td>
+                  <td class="table-cell-center">홍길동</td>
+                  <td class="table-cell-center">답변대기</td>
+                  <td class="table-cell-center">-</td>
+                </tr>
+
+                </tbody>
+
+              </table>
+
+            </div>
+
+            <div class="online-consulting-contents-paging">
+
+              <div class="paging">
+                <button type="button" class="paging-item arrow prev">이전</button>
+                <!-- 현재 페이지 current 클래스 표기 -->
+                <a href="#" class="paging-item current">1</a>
+                <a href="#" class="paging-item">2</a>
+                <a href="#" class="paging-item">3</a>
+                <a href="#" class="paging-item">4</a>
+                <a href="#" class="paging-item">5</a>
+                <a href="#" class="paging-item">6</a>
+                <a href="#" class="paging-item">7</a>
+                <a href="#" class="paging-item">8</a>
+                <a href="#" class="paging-item">9</a>
+                <a href="#" class="paging-item">10</a>
+                <button type="button" class="paging-item arrow next">다음</button>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <!-- // contents -->
+<!--=include _include/_footer.html -->

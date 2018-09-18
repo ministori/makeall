@@ -2,3 +2,165 @@
   position:absolute;
   bottom:0;
 }
+
+.status{
+
+  &-type {
+    display:inline-block;
+
+    color: #000;
+    font-weight: bold;
+    font-size:13px;
+    line-height:1.2;
+    box-sizing:border-box;
+  }
+
+  &-skyblue{
+    //border-color: #01aeef;
+    color:#01aeef;
+  }
+
+  &-red{
+    //border-color:#ff0000;
+    color:#ff0000;
+  }
+
+  &-btn{
+    //width:100px;
+    padding: 3px   20px;
+    border: 2px solid #000;
+    border-radius: 100px;
+    font-family:'NanumSquare', sans-serif;
+    font-size:13px;
+
+    &.fill-skyblue{
+      border:0;
+      background:#01aeef;
+      color:#fff;
+    }
+
+    &.border-skyblue{
+      border-color: #01aeef;
+      color:#01aeef;
+    }
+  }
+
+}
+
+.satisfaction{
+  display:inline-block;
+  width:107px;
+  height:17px;
+  text-indent:-99999em;
+  background:url(/images/common/icon_grade.png) no-repeat;
+
+  &.n0{
+    background-position:-5px -139px;
+  }
+
+  &.n1{
+    background-position:-5px -111px;
+  }
+  &.n2{
+    background-position:-5px -83px;
+  }
+  &.n3{
+    background-position:-5px -55px;
+  }
+  &.n4{
+    background-position:-5px -27px;
+  }
+  &.n5{
+    background-position:-5px 0px;
+  }
+
+}
+
+.strong{
+  font-weight:700;
+  &-red{
+    color:#ff0000;
+    font-weight:700;
+  }
+
+  &-green{
+    color:#32b6af;
+    font-weight:700;
+  }
+
+  &-blue{
+    color:#3db3e3;
+  }
+}
+
+.auto-width{
+  width:auto;
+}
+
+.description{
+
+  &:after{
+    content:"";
+    display:block;
+    clear:both;
+  }
+
+  &-type1{
+    font-size:15px;
+
+    >.strong{
+      font-size:24px;
+      color:#f4880a;
+    }
+  }
+
+  &-type2{
+    font-size:13px;
+    color:#666;
+
+    &.pdt{
+      padding-top:10px;
+    }
+  }
+
+  &-type3{
+    font-size:12px;
+    color:#666;
+    margin-top:15px;
+  }
+
+  &-type4{
+    font-size:15px;
+    color:#666;
+    padding-left:20px;
+    position:relative;
+    line-height:1.6;
+    &:before{
+      content:"※";
+      display:block;
+      position:absolute;
+      top:0;
+      left:0;
+    }
+  }
+
+  &-left{
+    float:left;
+    margin-left:10px;
+  }
+
+  &-right{
+    float:right;
+    margin-right:10px;
+  }
+
+}
+
+.required{
+  &:before{
+    content:"*";
+    display:inline-block;
+    color:#f00;
+    margin-right:3px;
+  }
+}

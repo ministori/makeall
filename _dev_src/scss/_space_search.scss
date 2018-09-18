@@ -251,35 +251,6 @@
           }
         }
 
-        .satisfaction{
-          display:inline-block;
-          width:107px;
-          height:17px;
-          text-indent:-99999em;
-          background:url(/images/common/icon_grade.png) no-repeat;
-
-          &.n0{
-            background-position:-5px -139px;
-          }
-
-          &.n1{
-            background-position:-5px -111px;
-          }
-          &.n2{
-            background-position:-5px -83px;
-          }
-          &.n3{
-            background-position:-5px -55px;
-          }
-          &.n4{
-            background-position:-5px -27px;
-          }
-          &.n5{
-            background-position:-5px 0px;
-          }
-
-        }
-
         .evaluate{
           padding:3px 9px;
           background:#3db3e3;

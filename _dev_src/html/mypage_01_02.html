@@ -54,9 +54,13 @@
       <div class="contents_wrap">
         <!-- net_tab -->
         <div class="net_tab">
-          <a href="" class="on">온라인 컨설팅</a>
+          <a href="" class="on">나의 예약/신청 내역</a>
           <p>/</p>
-          <a href="">온라인 컨설팅 사례</a>
+          <a href="">나의 만족도 평가</a>
+          <p>/</p>
+          <a href="">나의 컨설팅 내역</a>
+          <p>/</p>
+          <a href="">온라인 컨설팅 관리</a>
         </div>
         <!-- // net_tab -->
 
@@ -65,10 +69,10 @@
 
             <ul class="space-info-tab">
               <li class="space-info-tab-item">
-                <a href="#" class="space-info-tab-link on">전체</a>
+                <a href="#" class="space-info-tab-link">전체</a>
               </li>
               <li class="space-info-tab-item">
-                <a href="#" class="space-info-tab-link">장비 예약</a>
+                <a href="#" class="space-info-tab-link on">장비 예약</a>
               </li>
               <li class="space-info-tab-item">
                 <a href="#" class="space-info-tab-link">공간 예약</a>
@@ -92,32 +96,46 @@
 
               <div class="online-consulting-contents-top">
 
-                <div class="description-type1 description-left">
-                  <span>총</span>
-                  <span class="strong">543</span>
-                  <span>개의 내역이 있습니다.</span>
+                <div class="f-right">
+
+                  <div class="f-left w130 mr10">
+                    <select class="select-type1" title="분야선택">
+                      <option>전체1</option>
+                      <option>전체2</option>
+                      <option>전체3</option>
+                    </select>
+                  </div>
+
+                  <input type="text" class="search-text-type1 w300 f-left mr10" title="검색어 입력" />
+
+                  <button type="button" class="btn btn-skyblue search-type1 w110 f-left mr10">검색</button>
+
                 </div>
+
+                <script>
+                  $(function(){
+                    $('.select-type1').selectric();
+                  });
+                </script>
 
               </div>
 
               <table class="table table-vt">
 
                 <colgroup>
-                  <col style="width:50px;" />
-                  <col style="width:100px;" />
+                  <col style="width:90px;" />
                   <col style="width:120px;" />
                   <col style="width:150px;" />
                   <col style="width:auto;" />
                   <col style="width:130px;" />
-                  <col style="width:150px;" />
-                  <col style="width:120px;" />
+                  <col style="width:160px;" />
+                  <col style="width:130px;" />
                 </colgroup>
 
                 <thead>
                 <th>번호</th>
-                <th>구분</th>
                 <th class="table-cell-left">신청일</th>
-                <th class="table-cell-left">예약대상</th>
+                <th class="table-cell-left">장비</th>
                 <th class="table-cell-left">메이커스페이스</th>
                 <th class="table-cell-left">예약일</th>
                 <th class="table-cell-left">회차</th>
@@ -127,27 +145,55 @@
                 <tbody>
                 <tr>
                   <td class="table-cell-center">10</td>
-                  <td class="table-cell-center">장비</td>
                   <td>2018-07-12</td>
-                  <td class="text-blue">3D프린터</td>
-                  <td class="text-blue">스포츠융복합산업지원센터 MAKERS LAB</td>
+                  <td><a href="#" class="text-blue">3D프린터</a></td>
+                  <td><a href="#" class="text-blue">스포츠융복합산업지원센터 MAKERS LAB</a></td>
                   <td>2018.12.23</td>
                   <td>3회차(11:00 ~ 12:00)</td>
-                  <td class="table-cell-center">예약취소</td>
+                  <td class="table-cell-center">
+                    <button type="button" class="status-type status-btn">예약취소</button>
+                  </td>
                 </tr>
                 <tr>
                   <td class="table-cell-center">10</td>
-                  <td class="table-cell-center">장비</td>
                   <td>2018-07-12</td>
-                  <td class="text-blue">3D프린터</td>
-                  <td class="text-blue">스포츠융복합산업지원센터 MAKERS LAB</td>
+                  <td><a href="#" class="text-blue">레이저 커터</a></td>
+                  <td><a href="#" class="text-blue">전북창조경제혁신센터 셀프시제품제작실</a></td>
+                  <td>2018.12.23</td>
+                  <td>
+                    3회차(11:00 ~ 12:00)
+                  </td>
+                  <td class="table-cell-center">
+                    <div class="status-type status-skyblue">사용완료</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="table-cell-center">10</td>
+                  <td>2018-07-12</td>
+                  <td><a href="#" class="text-blue">3D프린터</a></td>
+                  <td><a href="#" class="text-blue">KAMIC(3D프린팅제조혁신지원센터)</a></td>
+                  <td>2018.12.23</td>
+                  <td>
+                    3회차(11:00 ~ 12:00)
+                  </td>
+                  <td class="table-cell-center">
+                    <div class="status-type status-red">노쇼</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="table-cell-center">10</td>
+                  <td>2018-07-12</td>
+                  <td><a href="#" class="text-blue">3D프린터</a></td>
+                  <td><a href="#" class="text-blue">스포츠융복합산업지원센터 MAKERS LAB</a></td>
                   <td>2018.12.23</td>
                   <td>
                     3회차(11:00 ~ 12:00)<br/>
                     3회차(11:00 ~ 12:00)<br/>
                     3회차(11:00 ~ 12:00)<br/>
                   </td>
-                  <td class="table-cell-center">예약취소</td>
+                  <td class="table-cell-center">
+                    <div class="status-type">예약취소</div>
+                  </td>
                 </tr>
 
                 </tbody>

@@ -59,7 +59,33 @@
     background:#32b6af;
   }
 
+  &-skyblue{
+    background:#3db3e3;
+  }
 
+  &-dark{
+    background:#424242;
+  }
+
+  &.search{
+    &-type1{
+      height:33px;
+      line-height:33px;
+      font-size:15px;
+    }
+  }
+
+  &-auto{
+    width:auto;
+    height:auto;
+    line-height:initial;
+    color:#fff;
+  }
+
+  &-round {
+    padding: 5px 20px;
+    border-radius: 100px;
+  }
 
   &-absolute{
     position:absolute;
@@ -72,8 +98,138 @@
 
 }
 
+
 .link{
 
+  &-type1{
+    font-size:30px;
+    font-weight:700;
+    border-bottom:2px solid #888;
+  }
 
+  &-gray{
+    color:#888;
+  }
 
+}
+
+.search-text{
+  &-type1{
+    height:33px;
+    padding:0 8px;
+    border:2px solid #454545;
+    font-size:15px;
+  }
+}
+
+.radio{
+  &-list{
+    &:after{
+      content:"";
+      display:block;
+      clear:both;
+    }
+  }
+  &-item{
+    margin-right:40px;
+    float:left;
+    position:relative;
+
+    .radio{
+
+      &-input{
+
+        width:8px;
+        height:8px;
+
+        position:absolute;
+        top:3px;
+        left:2px;
+        margin:1px;
+
+        &:checked + .radio-label:before{
+          background-position:0 0;
+        }
+
+      }
+
+      &-label{
+        display:block;
+        cursor:pointer;
+
+        &:before{
+          content:"";
+          display:inline-block;
+          width:13px;
+          height:13px;
+          margin-right:10px;
+          background:url(/images/common/spr_radio.png) -22px 0 no-repeat;
+          position:relative;
+          top:2px;
+        }
+      }
+    }
+  }
+}
+
+.chk{
+  &-list{
+    &:after{
+      content:"";
+      display:block;
+      clear:both;
+    }
+  }
+  &-item{
+    margin-right:40px;
+    float:left;
+    position:relative;
+
+    .chk{
+
+      &-input{
+
+        width:8px;
+        height:8px;
+
+        position:absolute;
+        top:2px;
+        left:2px;
+        margin:1px;
+
+        &:checked + .chk-label:before{
+          background-position:0 0;
+        }
+
+      }
+
+      &-label{
+        display:block;
+        position:relative;
+        padding-left:20px;
+        cursor:pointer;
+
+        &:before{
+          content:"";
+          display:block;
+          width:14px;
+          height:14px;
+          margin-right:10px;
+          background:url(/images/online_consulting/spr_online_consulting_input.png) -24px 0 no-repeat;
+          position:absolute;
+          top:0;
+          left:0;
+        }
+      }
+    }
+
+  }
+}
+
+.input{
+  &-type1{
+    height:26px;
+    font-size:13px;
+    padding:0 10px;
+  }
 }

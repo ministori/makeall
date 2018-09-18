@@ -1,0 +1,218 @@
+<!--=include _include/_header.html -->
+  <!-- contents -->
+  <div id="real_contents" class="contents">
+
+    <!-- sub_top -->
+    <div class="sub_top sub-top">
+      <div class="container">
+        <ul class="breadcrumb">
+          <li><i class="ti-home"></i> HOME</li>
+          <li>마이페이지</li>
+        </ul>
+        <h2 class="sub_top_tit">마이<span class="normal">페이지</span></h2>
+      </div>
+    </div>
+    <!-- // sub_top -->
+    <!-- 로그인 관련 스크립트 주석처리
+    <script type="text/javascript">
+      function find_string() {
+          var form = document.sub_form;
+          form.page.value = "1";
+
+          form.submit();
+      }
+
+      function project_tab(category){
+          document.location.href="?tsort=3&msort=8&s_key=&s_type=project_name&category="+category;
+      }
+
+      function write_btn(mode) {
+          var m_id = "";
+
+          if(m_id == "") {
+              alert('로그인 후 이용가능합니다.');
+              return;
+          }
+          var szhref = "/network/openingwrite.php?tsort=3&msort=8&s_key=&s_type=project_name&no=&page=1&mode="+mode+"&category=";
+
+          window.open(szhref , "admin_menu2" , "width=900,height=800,scrollbars=yes,resize=yes");
+      }
+
+      function open_write_btn(mode) {
+          var m_id = "";
+
+          if(m_id == "") {
+              alert('로그인 후 이용가능합니다.');
+              return;
+          }
+
+          document.location.href="/network/openproject.php?tsort=3&msort=8&s_key=&s_type=project_name&no=&page=1&mode=" + mode;
+      }
+  </script>
+    -->
+    <div class="wrap">
+      <div class="contents_wrap">
+        <!-- net_tab -->
+        <div class="net_tab">
+          <a href="">나의 예약/신청 내역</a>
+          <p>/</p>
+          <a href="" class="on">나의 만족도 평가</a>
+          <p>/</p>
+          <a href="">나의 컨설팅 내역</a>
+          <p>/</p>
+          <a href="">온라인 컨설팅 관리</a>
+        </div>
+        <!-- // net_tab -->
+
+        <div class="online-consulting-area">
+
+          <div class="container">
+
+            <div class="online-consulting-contents">
+
+              <div class="online-consulting-contents-top">
+
+                <h3 class="page-heading-lv3 page-heading-left">만족도 평가</h3>
+
+              </div>
+
+              <table class="table table-hr">
+
+                <colgroup>
+                  <col style="width:175px;" />
+                  <col style="width:auto;" />
+                  <col style="width:175px;" />
+                  <col style="width:auto;" />
+                </colgroup>
+
+                <tbody>
+                <tr>
+                  <th>구분</th>
+                  <td colspan="3">장비사용</td>
+                </tr>
+
+                <tr>
+                  <th>장비 명</th>
+                  <td colspan="3">3D 프린터</td>
+                </tr>
+
+                <tr>
+                  <th>메이커스페이스 명</th>
+                  <td colspan="3">락스타진</td>
+                </tr>
+
+                <tr>
+                  <th>사용일</th>
+                  <td>2018.07.17</td>
+                  <th>회차</th>
+                  <td>3회차 : 14:00 ~ 17:00</td>
+                </tr>
+
+                <tr>
+                  <th><span class="required">만족도 평가</span></th>
+                  <td colspan="3">
+                    <ul class="radio-list">
+                      <li class="radio-item">
+                        <input type="radio" id="radio-satisfaction-lv5" class="radio-input" name="satisfaction"/>
+                        <label for="radio-satisfaction-lv5" class="radio-label">매우 만족</label>
+                      </li>
+                      <li class="radio-item">
+                        <input type="radio" id="radio-satisfaction-lv4" class="radio-input" name="satisfaction"/>
+                        <label for="radio-satisfaction-lv4" class="radio-label">만족</label>
+                      </li>
+                      <li class="radio-item">
+                        <input type="radio" id="radio-satisfaction-lv3" class="radio-input" name="satisfaction"/>
+                        <label for="radio-satisfaction-lv3" class="radio-label">보통</label>
+                      </li>
+                      <li class="radio-item">
+                        <input type="radio" id="radio-satisfaction-lv2" class="radio-input" name="satisfaction"/>
+                        <label for="radio-satisfaction-lv2" class="radio-label">불만족</label>
+                      </li>
+                      <li class="radio-item">
+                        <input type="radio" id="radio-satisfaction-lv1" class="radio-input" name="satisfaction"/>
+                        <label for="radio-satisfaction-lv1" class="radio-label">매우 불만족</label>
+                      </li>
+
+                    </ul>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th><span class="required">평가내용</span></th>
+                  <td colspan="3" class="multi-line">
+                    오늘 메이커 스페이스에서 교육 받을 때를 제외하고 혼자서 처음 3D프린터를 사용해봤습니다.<br/>
+                    조작법을 숙지했음에도 약간 헷깔리긴 했지만 결과물이 잘 나와 좋습니다.<br/>
+                    직원분들이 너무 친절하게 응대해주셨습니다.<br/>
+                    다음에 또 이용할 생각입니다.
+                  </td>
+                </tr>
+
+                </tbody>
+
+              </table>
+
+            </div>
+
+            <div class="online-consulting-contents">
+
+              <div class="online-consulting-contents-top">
+
+                <h3 class="page-heading-lv3 page-heading-left">후기 답변</h3>
+
+              </div>
+
+              <table class="table table-hr">
+
+                <colgroup>
+                  <col style="width:175px;" />
+                  <col style="width:auto;" />
+                  <col style="width:175px;" />
+                  <col style="width:auto;" />
+                </colgroup>
+
+                <tbody>
+                <tr>
+                  <th>구분</th>
+                  <td>장비 담당자</td>
+                </tr>
+
+                <tr>
+                  <th>이름</th>
+                  <td>홍길동</td>
+                </tr>
+
+                <tr>
+                  <th>답변일</th>
+                  <td>2018-07-19</td>
+                </tr>
+
+                <tr>
+                  <th>답변내용</th>
+                  <td colspan="3" class="multi-line">
+                    즐거운 교육이 되셨다니 저도 만족스럽습니다.<br />
+                    항상 최선을 다하는 락스타진이 되겠습니다.<br />
+                    감사합니다.
+                  </td>
+                </tr>
+
+                </tbody>
+
+              </table>
+
+            </div>
+
+            <div class="online-consulting-contents-btn right">
+              <a href="#" class="link-type1 link-gray">목록</a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <!-- // contents -->
+<!--=include _include/_footer.html -->

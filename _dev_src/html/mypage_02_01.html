@@ -1,0 +1,246 @@
+<!--=include _include/_header.html -->
+  <!-- contents -->
+  <div id="real_contents" class="contents">
+
+    <!-- sub_top -->
+    <div class="sub_top sub-top">
+      <div class="container">
+        <ul class="breadcrumb">
+          <li><i class="ti-home"></i> HOME</li>
+          <li>마이페이지</li>
+        </ul>
+        <h2 class="sub_top_tit">마이<span class="normal">페이지</span></h2>
+      </div>
+    </div>
+    <!-- // sub_top -->
+    <!-- 로그인 관련 스크립트 주석처리
+    <script type="text/javascript">
+      function find_string() {
+          var form = document.sub_form;
+          form.page.value = "1";
+
+          form.submit();
+      }
+
+      function project_tab(category){
+          document.location.href="?tsort=3&msort=8&s_key=&s_type=project_name&category="+category;
+      }
+
+      function write_btn(mode) {
+          var m_id = "";
+
+          if(m_id == "") {
+              alert('로그인 후 이용가능합니다.');
+              return;
+          }
+          var szhref = "/network/openingwrite.php?tsort=3&msort=8&s_key=&s_type=project_name&no=&page=1&mode="+mode+"&category=";
+
+          window.open(szhref , "admin_menu2" , "width=900,height=800,scrollbars=yes,resize=yes");
+      }
+
+      function open_write_btn(mode) {
+          var m_id = "";
+
+          if(m_id == "") {
+              alert('로그인 후 이용가능합니다.');
+              return;
+          }
+
+          document.location.href="/network/openproject.php?tsort=3&msort=8&s_key=&s_type=project_name&no=&page=1&mode=" + mode;
+      }
+  </script>
+    -->
+    <div class="wrap">
+      <div class="contents_wrap">
+        <!-- net_tab -->
+        <div class="net_tab">
+          <a href="">나의 예약/신청 내역</a>
+          <p>/</p>
+          <a href="" class="on">나의 만족도 평가</a>
+          <p>/</p>
+          <a href="">나의 컨설팅 내역</a>
+          <p>/</p>
+          <a href="">온라인 컨설팅 관리</a>
+        </div>
+        <!-- // net_tab -->
+
+        <div class="online-consulting-area">
+
+          <div class="container">
+
+            <div class="online-consulting-contents">
+
+              <div class="online-consulting-contents-top">
+
+                <div class="f-right">
+
+                  <div class="f-left w130 mr10">
+                    <select class="select-type1" title="분야선택">
+                      <option>전체1</option>
+                      <option>전체2</option>
+                      <option>전체3</option>
+                    </select>
+                  </div>
+
+                  <input type="text" class="search-text-type1 w300 f-left mr10" title="검색어 입력" />
+
+                  <button type="button" class="btn btn-skyblue search-type1 w110 f-left mr10">검색</button>
+
+                </div>
+
+                <script>
+                  $(function(){
+                    $('.select-type1').selectric();
+                  });
+                </script>
+
+              </div>
+
+              <table class="table table-vt">
+
+                <colgroup>
+                  <col style="width:70px;" />
+                  <col style="width:120px;" />
+                  <col style="width:100px;" />
+                  <col style="width:200px;" />
+                  <col style="width:auto;" />
+                  <col style="width:130px;" />
+                  <col style="width:150px;" />
+                  <col style="width:130px;" />
+                </colgroup>
+
+                <thead>
+                <th>번호</th>
+                <th class="table-cell-left">평가일</th>
+                <th class="table-cell-left">구분</th>
+                <th class="table-cell-left">제목</th>
+                <th class="table-cell-left">메이커스페이스 명</th>
+                <th>만족도</th>
+                <th>만족도 평가</th>
+                <th>만족도 답변</th>
+                </thead>
+
+                <tbody>
+                <tr>
+                  <td class="table-cell-center">10</td>
+                  <td>2018-07-12</td>
+                  <td>장비사용</td>
+                  <td><a href="#" class="text-blue">3D프린터</a></td>
+                  <td>스포츠융복합산업지원센터 MAKERS LAB</td>
+                  <td class="table-cell-center">
+                    <span class="satisfaction n0">0</span>
+                    <!-- [D] 만족도 표시 : 개발시 삭제 필요
+                    <span class="satisfaction n1">1</span>
+                    <span class="satisfaction n2">2</span>
+                    <span class="satisfaction n3">3</span>
+                    <span class="satisfaction n4">4</span>
+                    <span class="satisfaction n5">5</span>
+                    -->
+                  </td>
+                  <td class="table-cell-center"><span class="strong">평가완료</span></td>
+                  <td class="table-cell-center">답변대기</td>
+                </tr>
+
+                <tr>
+                  <td class="table-cell-center">10</td>
+                  <td>2018-07-12</td>
+                  <td>공간사용</td>
+                  <td>강의실1</td>
+                  <td>전북창조경제혁신센터 셀프시제품제작실</td>
+                  <td class="table-cell-center">
+                    <span class="satisfaction n0">0</span>
+                    <!-- [D] 만족도 표시 : 개발시 삭제 필요
+                    <span class="satisfaction n1">1</span>
+                    <span class="satisfaction n2">2</span>
+                    <span class="satisfaction n3">3</span>
+                    <span class="satisfaction n4">4</span>
+                    <span class="satisfaction n5">5</span>
+                    -->
+                  </td>
+                  <td class="table-cell-center">
+                    <button type="button" class="status-type status-btn fill-skyblue">만족도 평가</button>
+                  </td>
+                  <td class="table-cell-center">-</td>
+                </tr>
+
+                <tr>
+                  <td class="table-cell-center">10</td>
+                  <td>2018-07-12</td>
+                  <td>교육수강</td>
+                  <td><a href="#" class="text-blue">아빠와 함께하는 드론만들기</a></td>
+                  <td>KAMIC(3D프린팅제조혁신지원센터)</td>
+                  <td class="table-cell-center">
+                    <span class="satisfaction n0">0</span>
+                    <!-- [D] 만족도 표시 : 개발시 삭제 필요
+                    <span class="satisfaction n1">1</span>
+                    <span class="satisfaction n2">2</span>
+                    <span class="satisfaction n3">3</span>
+                    <span class="satisfaction n4">4</span>
+                    <span class="satisfaction n5">5</span>
+                    -->
+                  </td>
+                  <td class="table-cell-center">
+                    평가완료
+                  </td>
+                  <td class="table-cell-center">답변완료</td>
+                </tr>
+
+                <tr>
+                  <td class="table-cell-center">10</td>
+                  <td>2018-07-12</td>
+                  <td>행사참가</td>
+                  <td><a href="#" class="text-blue">3D스캐너</a></td>
+                  <td>성수페이커스페이스</td>
+                  <td class="table-cell-center">
+                    <span class="satisfaction n0">0</span>
+                    <!-- [D] 만족도 표시 : 개발시 삭제 필요
+                    <span class="satisfaction n1">1</span>
+                    <span class="satisfaction n2">2</span>
+                    <span class="satisfaction n3">3</span>
+                    <span class="satisfaction n4">4</span>
+                    <span class="satisfaction n5">5</span>
+                    -->
+                  </td>
+                  <td class="table-cell-center">
+                    평가완료
+                  </td>
+                  <td class="table-cell-center">답변완료</td>
+                </tr>
+
+                </tbody>
+
+              </table>
+
+            </div>
+
+            <div class="online-consulting-contents-paging">
+
+              <div class="paging">
+                <button type="button" class="paging-item arrow prev">이전</button>
+                <!-- 현재 페이지 current 클래스 표기 -->
+                <a href="#" class="paging-item current">1</a>
+                <a href="#" class="paging-item">2</a>
+                <a href="#" class="paging-item">3</a>
+                <a href="#" class="paging-item">4</a>
+                <a href="#" class="paging-item">5</a>
+                <a href="#" class="paging-item">6</a>
+                <a href="#" class="paging-item">7</a>
+                <a href="#" class="paging-item">8</a>
+                <a href="#" class="paging-item">9</a>
+                <a href="#" class="paging-item">10</a>
+                <button type="button" class="paging-item arrow next">다음</button>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <!-- // contents -->
+<!--=include _include/_footer.html -->

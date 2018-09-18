@@ -541,39 +541,15 @@
       <div class="contents_wrap">
         <!-- net_tab -->
         <div class="net_tab">
-          <a href="" class="on">나의 예약/신청 내역</a>
+          <a href="">나의 예약/신청 내역</a>
           <p>/</p>
-          <a href="">나의 만족도 평가</a>
+          <a href="" class="on">나의 만족도 평가</a>
           <p>/</p>
           <a href="">나의 컨설팅 내역</a>
           <p>/</p>
           <a href="">온라인 컨설팅 관리</a>
         </div>
         <!-- // net_tab -->
-
-        <div class="container">
-          <div class="space-info-tab-wrap">
-
-            <ul class="space-info-tab">
-              <li class="space-info-tab-item">
-                <a href="#" class="space-info-tab-link on">전체</a>
-              </li>
-              <li class="space-info-tab-item">
-                <a href="#" class="space-info-tab-link">장비 예약</a>
-              </li>
-              <li class="space-info-tab-item">
-                <a href="#" class="space-info-tab-link">공간 예약</a>
-              </li>
-              <li class="space-info-tab-item">
-                <a href="#" class="space-info-tab-link">교육 예약</a>
-              </li>
-              <li class="space-info-tab-item">
-                <a href="#" class="space-info-tab-link">행사 예약</a>
-              </li>
-            </ul>
-
-          </div>
-        </div>
 
         <div class="online-consulting-area">
 
@@ -582,12 +558,6 @@
             <div class="online-consulting-contents">
 
               <div class="online-consulting-contents-top">
-
-                <div class="description-type1 description-left">
-                  <span>총</span>
-                  <span class="strong">543</span>
-                  <span>개의 내역이 있습니다.</span>
-                </div>
 
                 <div class="f-right">
 
@@ -617,86 +587,111 @@
 
                 <colgroup>
                   <col style="width:70px;" />
-                  <col style="width:90px;" />
                   <col style="width:120px;" />
-                  <col style="width:150px;" />
+                  <col style="width:100px;" />
+                  <col style="width:200px;" />
                   <col style="width:auto;" />
                   <col style="width:130px;" />
-                  <col style="width:160px;" />
+                  <col style="width:150px;" />
                   <col style="width:130px;" />
                 </colgroup>
 
                 <thead>
                 <th>번호</th>
-                <th>구분</th>
-                <th class="table-cell-left">신청일</th>
-                <th class="table-cell-left">예약대상</th>
-                <th class="table-cell-left">메이커스페이스</th>
-                <th class="table-cell-left">예약일</th>
-                <th class="table-cell-left">회차</th>
-                <th>상태</th>
+                <th class="table-cell-left">평가일</th>
+                <th class="table-cell-left">구분</th>
+                <th class="table-cell-left">제목</th>
+                <th class="table-cell-left">메이커스페이스 명</th>
+                <th>만족도</th>
+                <th>만족도 평가</th>
+                <th>만족도 답변</th>
                 </thead>
 
                 <tbody>
                 <tr>
                   <td class="table-cell-center">10</td>
-                  <td class="table-cell-center">장비</td>
                   <td>2018-07-12</td>
-                  <td class="text-blue">3D프린터</td>
-                  <td class="text-blue">스포츠융복합산업지원센터 MAKERS LAB</td>
-                  <td>2018.12.23</td>
-                  <td>3회차(11:00 ~ 12:00)</td>
+                  <td>장비사용</td>
+                  <td><a href="#" class="text-blue">3D프린터</a></td>
+                  <td>스포츠융복합산업지원센터 MAKERS LAB</td>
                   <td class="table-cell-center">
-                    <div class="status-type">예약취소</div>
+                    <span class="satisfaction n0">0</span>
+                    <!-- [D] 만족도 표시 : 개발시 삭제 필요
+                    <span class="satisfaction n1">1</span>
+                    <span class="satisfaction n2">2</span>
+                    <span class="satisfaction n3">3</span>
+                    <span class="satisfaction n4">4</span>
+                    <span class="satisfaction n5">5</span>
+                    -->
                   </td>
+                  <td class="table-cell-center"><span class="strong">평가완료</span></td>
+                  <td class="table-cell-center">답변대기</td>
                 </tr>
+
                 <tr>
                   <td class="table-cell-center">10</td>
-                  <td class="table-cell-center">장비</td>
                   <td>2018-07-12</td>
-                  <td class="text-blue">3D프린터</td>
-                  <td class="text-blue">스포츠융복합산업지원센터 MAKERS LAB</td>
-                  <td>2018.12.23</td>
-                  <td>
-                    3회차(11:00 ~ 12:00)<br/>
-                    3회차(11:00 ~ 12:00)<br/>
-                    3회차(11:00 ~ 12:00)<br/>
+                  <td>공간사용</td>
+                  <td>강의실1</td>
+                  <td>전북창조경제혁신센터 셀프시제품제작실</td>
+                  <td class="table-cell-center">
+                    <span class="satisfaction n0">0</span>
+                    <!-- [D] 만족도 표시 : 개발시 삭제 필요
+                    <span class="satisfaction n1">1</span>
+                    <span class="satisfaction n2">2</span>
+                    <span class="satisfaction n3">3</span>
+                    <span class="satisfaction n4">4</span>
+                    <span class="satisfaction n5">5</span>
+                    -->
                   </td>
                   <td class="table-cell-center">
-                    <div class="status-type status-skyblue">사용완료</div>
+                    <button type="button" class="status-type status-btn fill-skyblue">만족도 평가</button>
                   </td>
+                  <td class="table-cell-center">-</td>
                 </tr>
+
                 <tr>
                   <td class="table-cell-center">10</td>
-                  <td class="table-cell-center">장비</td>
                   <td>2018-07-12</td>
-                  <td class="text-blue">3D프린터</td>
-                  <td class="text-blue">스포츠융복합산업지원센터 MAKERS LAB</td>
-                  <td>2018.12.23</td>
-                  <td>
-                    3회차(11:00 ~ 12:00)<br/>
-                    3회차(11:00 ~ 12:00)<br/>
-                    3회차(11:00 ~ 12:00)<br/>
+                  <td>교육수강</td>
+                  <td><a href="#" class="text-blue">아빠와 함께하는 드론만들기</a></td>
+                  <td>KAMIC(3D프린팅제조혁신지원센터)</td>
+                  <td class="table-cell-center">
+                    <span class="satisfaction n0">0</span>
+                    <!-- [D] 만족도 표시 : 개발시 삭제 필요
+                    <span class="satisfaction n1">1</span>
+                    <span class="satisfaction n2">2</span>
+                    <span class="satisfaction n3">3</span>
+                    <span class="satisfaction n4">4</span>
+                    <span class="satisfaction n5">5</span>
+                    -->
                   </td>
                   <td class="table-cell-center">
-                    <div class="status-type status-red">노쇼</div>
+                    평가완료
                   </td>
+                  <td class="table-cell-center">답변완료</td>
                 </tr>
+
                 <tr>
                   <td class="table-cell-center">10</td>
-                  <td class="table-cell-center">장비</td>
                   <td>2018-07-12</td>
-                  <td class="text-blue">3D프린터</td>
-                  <td class="text-blue">스포츠융복합산업지원센터 MAKERS LAB</td>
-                  <td>2018.12.23</td>
-                  <td>
-                    3회차(11:00 ~ 12:00)<br/>
-                    3회차(11:00 ~ 12:00)<br/>
-                    3회차(11:00 ~ 12:00)<br/>
+                  <td>행사참가</td>
+                  <td><a href="#" class="text-blue">3D스캐너</a></td>
+                  <td>성수페이커스페이스</td>
+                  <td class="table-cell-center">
+                    <span class="satisfaction n0">0</span>
+                    <!-- [D] 만족도 표시 : 개발시 삭제 필요
+                    <span class="satisfaction n1">1</span>
+                    <span class="satisfaction n2">2</span>
+                    <span class="satisfaction n3">3</span>
+                    <span class="satisfaction n4">4</span>
+                    <span class="satisfaction n5">5</span>
+                    -->
                   </td>
                   <td class="table-cell-center">
-                    <button type="button" class="status-type btn-cancel">예약취소</button>
+                    평가완료
                   </td>
+                  <td class="table-cell-center">답변완료</td>
                 </tr>
 
                 </tbody>

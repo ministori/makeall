@@ -1,0 +1,233 @@
+<!--=include _include/_header.html -->
+  <!-- contents -->
+  <div id="real_contents" class="contents">
+
+    <!-- sub_top -->
+    <div class="sub_top sub-top">
+      <div class="container">
+        <ul class="breadcrumb">
+          <li><i class="ti-home"></i> HOME</li>
+          <li>마이페이지</li>
+        </ul>
+        <h2 class="sub_top_tit">마이<span class="normal">페이지</span></h2>
+      </div>
+    </div>
+    <!-- // sub_top -->
+    <!-- 로그인 관련 스크립트 주석처리
+    <script type="text/javascript">
+      function find_string() {
+          var form = document.sub_form;
+          form.page.value = "1";
+
+          form.submit();
+      }
+
+      function project_tab(category){
+          document.location.href="?tsort=3&msort=8&s_key=&s_type=project_name&category="+category;
+      }
+
+      function write_btn(mode) {
+          var m_id = "";
+
+          if(m_id == "") {
+              alert('로그인 후 이용가능합니다.');
+              return;
+          }
+          var szhref = "/network/openingwrite.php?tsort=3&msort=8&s_key=&s_type=project_name&no=&page=1&mode="+mode+"&category=";
+
+          window.open(szhref , "admin_menu2" , "width=900,height=800,scrollbars=yes,resize=yes");
+      }
+
+      function open_write_btn(mode) {
+          var m_id = "";
+
+          if(m_id == "") {
+              alert('로그인 후 이용가능합니다.');
+              return;
+          }
+
+          document.location.href="/network/openproject.php?tsort=3&msort=8&s_key=&s_type=project_name&no=&page=1&mode=" + mode;
+      }
+  </script>
+    -->
+    <div class="wrap">
+      <div class="contents_wrap">
+        <!-- net_tab -->
+        <div class="net_tab">
+          <a href="">나의 예약/신청 내역</a>
+          <p>/</p>
+          <a href="">나의 만족도 평가</a>
+          <p>/</p>
+          <a href="" class="on">나의 컨설팅 내역</a>
+          <p>/</p>
+          <a href="">온라인 컨설팅 관리</a>
+        </div>
+        <!-- // net_tab -->
+
+        <div class="online-consulting-area">
+
+          <div class="container">
+
+            <div class="online-consulting-contents">
+
+              <div class="online-consulting-contents-top">
+
+                <h3 class="page-heading-lv3 page-heading-left">질문 내용</h3>
+
+              </div>
+
+              <table class="table table-hr">
+
+                <colgroup>
+                  <col style="width:175px;" />
+                  <col style="width:auto;" />
+                  <col style="width:175px;" />
+                  <col style="width:auto;" />
+                </colgroup>
+
+                <tbody>
+
+                <tr>
+                  <th>등록일</th>
+                  <td>2018.07.17</td>
+                  <th>상태</th>
+                  <td><span class="strong-blue">답변완료</span></td>
+                </tr>
+
+                <tr>
+                  <th><span class="required">제목</span></th>
+                  <td colspan="3" class="none-padding">
+                    아두이노와 센서를 결합한 문고리 개발
+                  </td>
+                </tr>
+
+                <tr>
+                  <th><span class="required">내용</span></th>
+                  <td colspan="3" class="multi-line">
+                    아두이노와 센서를 결합해 리모컨으로 문을 여닫을 수 있는 제품을 개발하려고합니다.<br />
+                    개발하는데 어려움이 많아 도움이 필요합니다.<br />
+                    소프트웨어 쪽 지원이 필요합니다.<br />
+                    도움을 주십시오.
+                  </td>
+                </tr>
+
+                </tbody>
+
+              </table>
+
+            </div>
+
+            <div class="online-consulting-contents">
+
+              <div class="online-consulting-contents-top">
+
+                <h3 class="page-heading-lv3 page-heading-left">답변 내용</h3>
+
+              </div>
+
+              <table class="table table-hr">
+
+                <colgroup>
+                  <col style="width:175px;" />
+                  <col style="width:auto;" />
+                  <col style="width:175px;" />
+                  <col style="width:auto;" />
+                </colgroup>
+
+                <tbody>
+
+                <tr>
+                  <th>답변일</th>
+                  <td>2018.07.17</td>
+                  <th>응답시간</th>
+                  <td>30분</td>
+                </tr>
+
+                <tr>
+                  <th>이름</th>
+                  <td colspan="3" class="none-padding">
+                    홍길동
+                  </td>
+                </tr>
+
+                <tr>
+                  <th>답변</th>
+                  <td colspan="3" class="multi-line">
+                    아두이노와 센서를 결합한 문고리 아이디어가 괜찮습니다.<br />
+                    IOT제품을 만드는데 있어 최근에는 소프트웨어 적인 요청이 많이 증가한 상태입니다.<br />
+                    소프트웨어 교육을 따로 받기어려우시면,<br />
+                    소프트웨어 개발이 가능한 팀원을 영입하는 것을 추천드립니다.
+                  </td>
+                </tr>
+
+                </tbody>
+
+              </table>
+
+            </div>
+
+            <div class="online-consulting-contents">
+
+              <div class="online-consulting-contents-top">
+
+                <h3 class="page-heading-lv3 page-heading-left">공개/추천</h3>
+
+              </div>
+
+              <table class="table table-hr">
+
+                <colgroup>
+                  <col style="width:175px;" />
+                  <col style="width:auto;" />
+                </colgroup>
+
+                <tbody>
+
+                <tr>
+                  <th>컨설팅 공개</th>
+                  <td>
+                    <ul class="chk-list f-left">
+                      <li class="chk-item">
+                        <input type="checkbox" id="chk-open" class="chk-input"/>
+                        <label for="chk-open" class="chk-label">공개</label>
+                      </li>
+                    </ul>
+                    <div class="description-type2">※ 컨설팅 내역 공개 시 컨설팅 사례 내 온라인 컨설팅 질문/답변 내용이 공개됩니다.</div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th>컨설팅 추천</th>
+                  <td>
+                    <ul class="chk-list f-left">
+                      <li class="chk-item">
+                        <input type="checkbox" id="chk-recommended" class="chk-input"/>
+                        <label for="chk-recommended" class="chk-label">추천</label>
+                      </li>
+                    </ul>
+                    <div class="description-type2">※ 추천은 다른 사용자가 전문가를 선택하는데 있어 도움이 됩니다.</div>
+                  </td>
+                </tr>
+
+                </tbody>
+
+              </table>
+
+            </div>
+
+            <div class="online-consulting-contents-btn">
+              <button type="button" class="btn btn-green">확인</button>
+              <button type="button" class="btn btn-gray">목록</button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <!-- // contents -->
+<!--=include _include/_footer.html -->

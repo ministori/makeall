@@ -541,39 +541,15 @@
       <div class="contents_wrap">
         <!-- net_tab -->
         <div class="net_tab">
-          <a href="" class="on">나의 예약/신청 내역</a>
+          <a href="">나의 예약/신청 내역</a>
           <p>/</p>
-          <a href="">나의 만족도 평가</a>
+          <a href="" class="on">나의 만족도 평가</a>
           <p>/</p>
           <a href="">나의 컨설팅 내역</a>
           <p>/</p>
           <a href="">온라인 컨설팅 관리</a>
         </div>
         <!-- // net_tab -->
-
-        <div class="container">
-          <div class="space-info-tab-wrap">
-
-            <ul class="space-info-tab">
-              <li class="space-info-tab-item">
-                <a href="#" class="space-info-tab-link on">전체</a>
-              </li>
-              <li class="space-info-tab-item">
-                <a href="#" class="space-info-tab-link">장비 예약</a>
-              </li>
-              <li class="space-info-tab-item">
-                <a href="#" class="space-info-tab-link">공간 예약</a>
-              </li>
-              <li class="space-info-tab-item">
-                <a href="#" class="space-info-tab-link">교육 예약</a>
-              </li>
-              <li class="space-info-tab-item">
-                <a href="#" class="space-info-tab-link">행사 예약</a>
-              </li>
-            </ul>
-
-          </div>
-        </div>
 
         <div class="online-consulting-area">
 
@@ -583,119 +559,78 @@
 
               <div class="online-consulting-contents-top">
 
-                <div class="description-type1 description-left">
-                  <span>총</span>
-                  <span class="strong">543</span>
-                  <span>개의 내역이 있습니다.</span>
-                </div>
-
-                <div class="f-right">
-
-                  <div class="f-left w130 mr10">
-                    <select class="select-type1" title="분야선택">
-                      <option>전체1</option>
-                      <option>전체2</option>
-                      <option>전체3</option>
-                    </select>
-                  </div>
-
-                  <input type="text" class="search-text-type1 w300 f-left mr10" title="검색어 입력" />
-
-                  <button type="button" class="btn btn-skyblue search-type1 w110 f-left mr10">검색</button>
-
-                </div>
-
-                <script>
-                  $(function(){
-                    $('.select-type1').selectric();
-                  });
-                </script>
+                <h3 class="page-heading-lv3 page-heading-left">만족도 평가</h3>
 
               </div>
 
-              <table class="table table-vt">
+              <table class="table table-hr">
 
                 <colgroup>
-                  <col style="width:70px;" />
-                  <col style="width:90px;" />
-                  <col style="width:120px;" />
-                  <col style="width:150px;" />
+                  <col style="width:175px;" />
                   <col style="width:auto;" />
-                  <col style="width:130px;" />
-                  <col style="width:160px;" />
-                  <col style="width:130px;" />
+                  <col style="width:175px;" />
+                  <col style="width:auto;" />
                 </colgroup>
-
-                <thead>
-                <th>번호</th>
-                <th>구분</th>
-                <th class="table-cell-left">신청일</th>
-                <th class="table-cell-left">예약대상</th>
-                <th class="table-cell-left">메이커스페이스</th>
-                <th class="table-cell-left">예약일</th>
-                <th class="table-cell-left">회차</th>
-                <th>상태</th>
-                </thead>
 
                 <tbody>
                 <tr>
-                  <td class="table-cell-center">10</td>
-                  <td class="table-cell-center">장비</td>
-                  <td>2018-07-12</td>
-                  <td class="text-blue">3D프린터</td>
-                  <td class="text-blue">스포츠융복합산업지원센터 MAKERS LAB</td>
-                  <td>2018.12.23</td>
-                  <td>3회차(11:00 ~ 12:00)</td>
-                  <td class="table-cell-center">
-                    <div class="status-type">예약취소</div>
+                  <th>구분</th>
+                  <td colspan="3">장비사용</td>
+                </tr>
+
+                <tr>
+                  <th>장비 명</th>
+                  <td colspan="3">3D 프린터</td>
+                </tr>
+
+                <tr>
+                  <th>메이커스페이스 명</th>
+                  <td colspan="3">락스타진</td>
+                </tr>
+
+                <tr>
+                  <th>사용일</th>
+                  <td>2018.07.17</td>
+                  <th>회차</th>
+                  <td>3회차 : 14:00 ~ 17:00</td>
+                </tr>
+
+                <tr>
+                  <th><span class="required">만족도 평가</span></th>
+                  <td colspan="3">
+                    <ul class="radio-list">
+                      <li class="radio-item">
+                        <input type="radio" id="radio-satisfaction-lv5" class="radio-input" name="satisfaction"/>
+                        <label for="radio-satisfaction-lv5" class="radio-label">매우 만족</label>
+                      </li>
+                      <li class="radio-item">
+                        <input type="radio" id="radio-satisfaction-lv4" class="radio-input" name="satisfaction"/>
+                        <label for="radio-satisfaction-lv4" class="radio-label">만족</label>
+                      </li>
+                      <li class="radio-item">
+                        <input type="radio" id="radio-satisfaction-lv3" class="radio-input" name="satisfaction"/>
+                        <label for="radio-satisfaction-lv3" class="radio-label">보통</label>
+                      </li>
+                      <li class="radio-item">
+                        <input type="radio" id="radio-satisfaction-lv2" class="radio-input" name="satisfaction"/>
+                        <label for="radio-satisfaction-lv2" class="radio-label">불만족</label>
+                      </li>
+                      <li class="radio-item">
+                        <input type="radio" id="radio-satisfaction-lv1" class="radio-input" name="satisfaction"/>
+                        <label for="radio-satisfaction-lv1" class="radio-label">매우 불만족</label>
+                      </li>
+
+                    </ul>
                   </td>
                 </tr>
+
                 <tr>
-                  <td class="table-cell-center">10</td>
-                  <td class="table-cell-center">장비</td>
-                  <td>2018-07-12</td>
-                  <td class="text-blue">3D프린터</td>
-                  <td class="text-blue">스포츠융복합산업지원센터 MAKERS LAB</td>
-                  <td>2018.12.23</td>
-                  <td>
-                    3회차(11:00 ~ 12:00)<br/>
-                    3회차(11:00 ~ 12:00)<br/>
-                    3회차(11:00 ~ 12:00)<br/>
-                  </td>
-                  <td class="table-cell-center">
-                    <div class="status-type status-skyblue">사용완료</div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="table-cell-center">10</td>
-                  <td class="table-cell-center">장비</td>
-                  <td>2018-07-12</td>
-                  <td class="text-blue">3D프린터</td>
-                  <td class="text-blue">스포츠융복합산업지원센터 MAKERS LAB</td>
-                  <td>2018.12.23</td>
-                  <td>
-                    3회차(11:00 ~ 12:00)<br/>
-                    3회차(11:00 ~ 12:00)<br/>
-                    3회차(11:00 ~ 12:00)<br/>
-                  </td>
-                  <td class="table-cell-center">
-                    <div class="status-type status-red">노쇼</div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="table-cell-center">10</td>
-                  <td class="table-cell-center">장비</td>
-                  <td>2018-07-12</td>
-                  <td class="text-blue">3D프린터</td>
-                  <td class="text-blue">스포츠융복합산업지원센터 MAKERS LAB</td>
-                  <td>2018.12.23</td>
-                  <td>
-                    3회차(11:00 ~ 12:00)<br/>
-                    3회차(11:00 ~ 12:00)<br/>
-                    3회차(11:00 ~ 12:00)<br/>
-                  </td>
-                  <td class="table-cell-center">
-                    <button type="button" class="status-type btn-cancel">예약취소</button>
+                  <th><span class="required">평가내용</span></th>
+                  <td colspan="3" class="multi-line">
+                    오늘 메이커 스페이스에서 교육 받을 때를 제외하고 혼자서 처음 3D프린터를 사용해봤습니다.<br/>
+                    조작법을 숙지했음에도 약간 헷깔리긴 했지만 결과물이 잘 나와 좋습니다.<br/>
+                    직원분들이 너무 친절하게 응대해주셨습니다.<br/>
+                    다음에 또 이용할 생각입니다.
                   </td>
                 </tr>
 
@@ -705,24 +640,9 @@
 
             </div>
 
-            <div class="online-consulting-contents-paging">
-
-              <div class="paging">
-                <button type="button" class="paging-item arrow prev">이전</button>
-                <!-- 현재 페이지 current 클래스 표기 -->
-                <a href="#" class="paging-item current">1</a>
-                <a href="#" class="paging-item">2</a>
-                <a href="#" class="paging-item">3</a>
-                <a href="#" class="paging-item">4</a>
-                <a href="#" class="paging-item">5</a>
-                <a href="#" class="paging-item">6</a>
-                <a href="#" class="paging-item">7</a>
-                <a href="#" class="paging-item">8</a>
-                <a href="#" class="paging-item">9</a>
-                <a href="#" class="paging-item">10</a>
-                <button type="button" class="paging-item arrow next">다음</button>
-              </div>
-
+            <div class="online-consulting-contents-btn">
+              <button type="button" class="btn btn-green">평가하기</button>
+              <button type="button" class="btn btn-gray">취소</button>
             </div>
 
           </div>
