@@ -2,31 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1440de91-548c-4a85-81ff-0a9278bd5fff" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/_dev_src/html/mypage_01_01.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_dev_src/html/mypage_01_02.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_dev_src/html/mypage_01_03.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_dev_src/html/mypage_01_04.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_dev_src/html/mypage_01_05.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_dev_src/html/mypage_02_02.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_dev_src/html/mypage_02_03.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_dev_src/html/mypage_03_01.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_dev_src/html/mypage_03_02.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_dev_src/html/mypage_03_03.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_dev_src/html/mypage_04_01.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_dev_src/html/mypage_04_02.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_dev_src/html/mypage_01.html" beforeDir="false" afterPath="$PROJECT_DIR$/_dev_src/html/mypage_02_01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_dev_src/html/online_consulting_04.html" beforeDir="false" afterPath="$PROJECT_DIR$/_dev_src/html/online_consulting_04.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_dev_src/scss/_additional.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_dev_src/scss/_additional.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_dev_src/scss/_detail_value.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_dev_src/scss/_detail_value.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_dev_src/scss/_expert_search.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_dev_src/scss/_expert_search.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_dev_src/scss/_form_element.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_dev_src/scss/_form_element.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_dev_src/scss/_reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_dev_src/scss/_reset.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_dev_src/scss/_space_search.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_dev_src/scss/_space_search.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_dev_src/scss/_table.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_dev_src/scss/_table.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/mypage_01.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/mypage_01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/online_consulting_04.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/online_consulting_04.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_dev_src/data/file_list.json" beforeDir="false" afterPath="$PROJECT_DIR$/_dev_src/data/file_list.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/release/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/release/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/release/html/online_consulting_04.html" beforeDir="false" afterPath="$PROJECT_DIR$/release/html/online_consulting_04.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -39,27 +17,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="mypage_02_01.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_dev_src/html/mypage_02_01.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="72" column="58" selection-start-line="72" selection-start-column="58" selection-end-line="72" selection-end-column="58" />
-              <folding>
-                <element signature="n#style#0;n#col#0;n#colgroup#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#col#1;n#colgroup#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#col#2;n#colgroup#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#col#3;n#colgroup#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#col#4;n#colgroup#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#col#5;n#colgroup#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#col#6;n#colgroup#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#col#7;n#colgroup#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -382,9 +340,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gulp.js.default" />
         <item itemvalue="Gulp.js.release" />
         <item itemvalue="Gulp.js.seperate" />
+        <item itemvalue="Gulp.js.default" />
       </list>
     </recent_temporary>
   </component>
@@ -424,23 +382,22 @@
       <workItem from="1537033431817" duration="10325000" />
       <workItem from="1537146098711" duration="492000" />
       <workItem from="1537181105751" duration="7725000" />
-      <workItem from="1537233822970" duration="25867000" />
+      <workItem from="1537233822970" duration="26159000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="176327000" />
+    <option name="totallyTimeSpent" value="176619000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Gulp" order="2" sideWeight="0.5342105" side_tool="true" weight="0.19802678" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.46578947" visible="true" weight="0.19802678" />
+      <window_info id="Gulp" order="2" sideWeight="0.5342105" side_tool="true" visible="true" weight="0.19802678" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.46578947" weight="0.19802678" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3276316" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3276316" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info id="npm" order="4" side_tool="true" />
       <window_info id="Structure" order="1" sideWeight="0.5171053" side_tool="true" weight="0.17054264" />
