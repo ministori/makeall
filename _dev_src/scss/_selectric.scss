@@ -229,6 +229,35 @@ $selectric-font-size:       12px !default;                                      
 
   }
 
+  &-table-selectric{
+    float:left;
+    width:140px;
+    height:41px;
+    margin-right:10px;
+
+    .selectric{
+      border-color:#e8e8e8;
+      background:#fff;
+
+      .label{
+        height:39px;
+        line-height:39px;
+        background:#fff;
+        box-sizing:border-box;
+      }
+
+      .button{
+        background:#fff;
+      }
+
+      &-items{
+        li.highlighted{
+          background:#ccc;
+        }
+      }
+    }
+  }
+
 }
 
 .selectric-focus .selectric {

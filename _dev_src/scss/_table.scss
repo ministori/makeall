@@ -24,7 +24,6 @@
     }
   }
 
-
   &-vt{
     border-top:2px solid #000;
 
@@ -51,6 +50,22 @@
       }
     }
 
+  }
+
+  &-tr{
+
+    th{
+      height:54px;
+      font-size:13px;
+      text-align:left;
+      vertical-align:middle;
+    }
+
+    td{
+      height:54px;
+      font-size:13px;
+      vertical-align:middle;
+    }
   }
 
   &-cell{
@@ -88,6 +103,5 @@
       left:0;
     }
   }
-
 
 }

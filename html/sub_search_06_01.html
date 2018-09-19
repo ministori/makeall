@@ -60,7 +60,7 @@
     <!--<script type="text/javascript" src="/js/jquery.cookie.js"></script>-->
     <!--<script type="text/javascript" src="/js/snsShare.js"></script>-->
     <script type="text/javascript" src="https://www.makeall.com/js/common.js"></script>
-    <!--<script type="text/javascript" src="/js/jquery.bxslider.js"></script>-->
+    <script type="text/javascript" src="https://www.makeall.com/js/jquery.bxslider.js"></script>
     <!--<script type="text/javascript" src="https://www.makeall.com/js/jquery-ui-1.9.2.datepicker.min.js"></script>-->
     <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/0.6.4/datepicker.min.js"></script> -->
 
@@ -490,7 +490,7 @@
   <div id="real_contents" class="contents space-search">
     <!--<div class="container">-->
       <!-- sub_top -->
-      <div class="sub_top sub-top">
+      <div class="sub_top">
         <div class="container">
           <ul class="breadcrumb">
             <li><i class="ti-home"></i> HOME</li>
@@ -708,7 +708,8 @@
           </div>
           <!-- // net_tab -->
 
-          <div class="space-info">
+          <!-- [D] 각 스페이스 별 사진 배경으로 사용 -->
+          <div class="space-info-wrap" style="background:url(/images/search/bg_sub.jpg) no-repeat; background-size:contain;">
 
             <div class="container space-info">
 
@@ -798,42 +799,138 @@
 
                 </div>
 
-                <div class="space-info-section">
+                <div class="space-info-section general">
 
-                  <dl class="space-info-dlist">
-                    <dt class="space-info-dtitle">유형</dt>
-                    <dd class="space-info-data">민간</dd>
-                  </dl>
+                  <div class="notice clearfix">
+                    <img src="/images/search/temp_image_notice.jpg" alt="makeus" class="f-left mr60" />
+                    <div class="notice-text f-left">
+                      <div class="notice-text-title mt20">메이커스 빌 점검안내</div>
+                      <div class="notice-text-desc mt20">메이커스 빌 공간 인테리어 공사로 2018년 9월1일 부터 2018년 9월 3일까지 이용이 제한됩니다.<br />더 나은 서비스로 찾아뵙겠습니다.</div>
+                    </div>
+                  </div>
 
-                  <dl class="space-info-dlist">
-                    <dt class="space-info-dtitle">운영시</dt>
-                    <dd class="space-info-data">연중무효, 오전 7시 ~ 오전 1시</dd>
-                  </dl>
+                  <ul class="info-detail-list clearfix">
+                    <li class="info-detail-item half f-left"><span class="heading">유형</span><span class="desc">민간</span></li>
+                    <li class="info-detail-item half f-left"><span class="heading">운영시</span><span class="desc">연중무효, 오전 7시 ~ 오전 1시</span></li>
+                    <li class="info-detail-item half f-left"><span class="heading">제공 서비스</span><span class="desc">장비 대여, 공간  대여, 3D프린터 교육</span></li>
+                    <li class="info-detail-item half f-left"><span class="heading">담당자</span><span class="desc">김진식 / 전화 문의 필요</span></li>
+                    <li class="info-detail-item half f-left"><span class="heading">MAKE분야</span><span class="desc">3D프린터를 활용한 피규어 제작</span></li>
+                    <li class="info-detail-item half f-left"><span class="heading">이용료</span><span class="desc">무료</span></li>
+                    <li class="info-detail-item half f-left"><span class="heading">기타</span><span class="desc">&nbsp;</span></li>
+                  </ul>
 
-                  <dl class="space-info-dlist">
-                    <dt class="space-info-dtitle">제공 서비스</dt>
-                    <dd class="space-info-data">장비 대여, 공간  대여, 3D프린터 교육</dd>
-                  </dl>
+                  <div class="search-visual clearfix">
 
-                  <dl class="space-info-dlist">
-                    <dt class="space-info-dtitle">담당자</dt>
-                    <dd class="space-info-data">김진식 / 전화 문의 필요</dd>
-                  </dl>
+                    <div class="clearfix">
 
-                  <dl class="space-info-dlist">
-                    <dt class="space-info-dtitle">MAKE분야</dt>
-                    <dd class="space-info-data">3D프린터를 활용한 피규어 제작</dd>
-                  </dl>
+                      <div class="search-visual-item half f-left">
+                        <div class="search-visual-item-heading">홍보 이미지</div>
+                        <div class="search-visual-item-content">
+                          <div class="space-slider">
+                            <img src="/images/search/temp_image_info_slide.jpg" class="space-slider-image" alt="홍보이미지" />
+                            <img src="/images/search/temp_image_info_slide.jpg" class="space-slider-image" alt="홍보이미지" />
+                            <img src="/images/search/temp_image_info_slide.jpg" class="space-slider-image" alt="홍보이미지" />
+                          </div>
+                          <script>
+                            $(function(){
+                              $('.space-slider').bxSlider({
+                                controls:true,
+                                pager:false
+                              });
+                            });
+                          </script>
+                        </div>
+                      </div>
 
-                  <dl class="space-info-dlist">
-                    <dt class="space-info-dtitle">이용료</dt>
-                    <dd class="space-info-data">무료</dd>
-                  </dl>
+                      <div class="search-visual-item half f-right">
+                        <div class="search-visual-item-heading">홍보 이미지</div>
+                        <div class="search-visual-item-content">
+                          <iframe src="https://www.youtube.com/embed/m8NjF2T8MgY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                      </div>
 
-                  <dl class="space-info-dlist">
-                    <dt class="space-info-dtitle">기타</dt>
-                    <dd class="space-info-data"></dd>
-                  </dl>
+                    </div>
+
+                    <div class="search-visual-item mt40">
+                      <div class="search-visual-item-heading">메이커스 빌 TEAM</div>
+                      <div class="search-visual-item-content">
+
+                        <div class="space-team">
+
+                          <div class="f-left">
+                            <div class="space-team-picture">
+                              <img src="/images/search/temp_space_team.jpg" alt="이름" />
+                            </div>
+                          </div>
+
+                          <div class="f-right">
+                            <div class="space-team-title mt10">장비담당자</div>
+                            <div class="space-team-desc mt20">
+                              윤명기<br />
+                              010-1234-5678
+                            </div>
+                          </div>
+
+                        </div>
+
+                        <div class="space-team">
+
+                          <div class="f-left">
+                            <div class="space-team-picture">
+                              <img src="/images/search/temp_space_team.jpg" alt="이름" />
+                            </div>
+                          </div>
+
+                          <div class="f-right">
+                            <div class="space-team-title mt10">장비담당자</div>
+                            <div class="space-team-desc mt20">
+                              윤명기<br />
+                              010-1234-5678
+                            </div>
+                          </div>
+
+                        </div>
+
+                        <div class="space-team">
+
+                          <div class="f-left">
+                            <div class="space-team-picture">
+                              <img src="/images/search/temp_space_team.jpg" alt="이름" />
+                            </div>
+                          </div>
+
+                          <div class="f-right">
+                            <div class="space-team-title mt10">장비담당자</div>
+                            <div class="space-team-desc mt20">
+                              윤명기<br />
+                              010-1234-5678
+                            </div>
+                          </div>
+
+                        </div>
+
+                        <div class="space-team">
+
+                          <div class="f-left">
+                            <div class="space-team-picture">
+                              <img src="/images/search/temp_space_team.jpg" alt="이름" />
+                            </div>
+                          </div>
+
+                          <div class="f-right">
+                            <div class="space-team-title mt10">장비담당자</div>
+                            <div class="space-team-desc mt20">
+                              윤명기<br />
+                              010-1234-5678
+                            </div>
+                          </div>
+
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
 
                 </div>
 

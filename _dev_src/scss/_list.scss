@@ -215,6 +215,14 @@
       display:block;
       width:245px;
       height:330px;
+
+      &.image{
+        &-small{
+          height:160px;
+          border:1px solid #e8e8e8;
+          box-sizing:border-box;
+        }
+      }
     }
 
     &-title{
@@ -257,6 +265,12 @@
         width:50%;
         float:left;
       }
+
+      &.multi{
+        .info-detail-item .heading{
+          position:relative;
+        }
+      }
     }
 
     &-item{
@@ -264,6 +278,19 @@
       margin-bottom:7px;
       position:relative;
       box-sizing:border-box;
+
+      &.half{
+        width:calc(50% - 40px);
+
+        &.f-left{
+          margin-right:40px;
+
+          &:nth-child(2n){
+            margin-left:40px;
+            margin-right:auto;
+          }
+        }
+      }
 
       &:before{
         content:"";

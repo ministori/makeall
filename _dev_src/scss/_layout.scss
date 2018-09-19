@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+.gnb{
+  position:relative;
+  z-index:999;
+}
+
 .contents{
   padding-bottom:100px;
   &.no-padding-bottom{

@@ -1,6 +1,19 @@
-.absolute-bottom{
-  position:absolute;
-  bottom:0;
+.clearfix{
+  content:"";
+  display:block;
+  clear:both;
+}
+
+.absolute{
+  &-bottom {
+    position: absolute;
+    bottom: 0;
+  }
+
+  &-right{
+    position:absolute;
+    right:0;
+  }
 }
 
 .status{
@@ -144,6 +157,11 @@
     }
   }
 
+  &-type5{
+    font-size:14px;
+    line-height:1.8;
+  }
+
   &-left{
     float:left;
     margin-left:10px;
@@ -163,4 +181,15 @@
     color:#f00;
     margin-right:3px;
   }
+}
+.align-center{
+  text-align:center;
+}
+
+.inline-block{
+  display:inline-block;
+}
+
+.none-padding{
+  padding:0;
 }

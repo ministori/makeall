@@ -490,7 +490,7 @@
   <div id="real_contents" class="contents">
 
     <!-- sub_top -->
-    <div class="sub_top sub-top">
+    <div class="sub_top">
       <div class="container">
         <ul class="breadcrumb">
           <li><i class="ti-home"></i> HOME</li>
@@ -537,182 +537,189 @@
       }
   </script>
     -->
-    <div class="wrap">
-      <div class="contents_wrap">
-        <!-- net_tab -->
-        <div class="net_tab">
-          <a href="" class="on">나의 예약/신청 내역</a>
-          <p>/</p>
-          <a href="">나의 만족도 평가</a>
-          <p>/</p>
-          <a href="">나의 컨설팅 내역</a>
-          <p>/</p>
-          <a href="">온라인 컨설팅 관리</a>
-        </div>
-        <!-- // net_tab -->
+    <div class="mypage_wrap">
+
+      <div class="tab_wrap scroll">
 
         <div class="container">
-          <div class="space-info-tab-wrap">
-
-            <ul class="space-info-tab">
-              <li class="space-info-tab-item">
-                <a href="#" class="space-info-tab-link on">전체</a>
-              </li>
-              <li class="space-info-tab-item">
-                <a href="#" class="space-info-tab-link">장비 예약</a>
-              </li>
-              <li class="space-info-tab-item">
-                <a href="#" class="space-info-tab-link">공간 예약</a>
-              </li>
-              <li class="space-info-tab-item">
-                <a href="#" class="space-info-tab-link">교육 예약</a>
-              </li>
-              <li class="space-info-tab-item">
-                <a href="#" class="space-info-tab-link">행사 예약</a>
-              </li>
-            </ul>
-
-          </div>
+          <ul class="tab">
+            <li><a href="">프로필관리</a></li>
+            <li><a href="">회원정보변경</a></li>
+            <li><a href="">스크랩</a></li>
+            <li><a href="">Follow/Followings</a></li>
+            <li><a href="">오픈프로젝트</a></li>
+            <li><a href="">매뉴얼</a></li>
+            <li class="on" style="width:14%;"><a href="">예약/신청내역</a></li>
+            <li><a href="">만족도평가</a></li>
+            <li><a href="">컨설팅내역</a></li>
+            <li style="width:14%;"><a href="">온라인 컨설팅관리</a></li>
+          </ul>
         </div>
 
-        <div class="online-consulting-area">
+      </div>
 
-          <div class="container">
+      <div class="container">
 
-            <div class="online-consulting-contents">
+        <div class="space-info-tab-wrap">
 
-              <div class="online-consulting-contents-top">
+          <ul class="space-info-tab">
+            <li class="space-info-tab-item">
+              <a href="#" class="space-info-tab-link on">전체</a>
+            </li>
+            <li class="space-info-tab-item">
+              <a href="#" class="space-info-tab-link">장비 예약</a>
+            </li>
+            <li class="space-info-tab-item">
+              <a href="#" class="space-info-tab-link">공간 예약</a>
+            </li>
+            <li class="space-info-tab-item">
+              <a href="#" class="space-info-tab-link">교육 예약</a>
+            </li>
+            <li class="space-info-tab-item">
+              <a href="#" class="space-info-tab-link">행사 예약</a>
+            </li>
+          </ul>
 
-                <div class="f-right">
+        </div>
 
-                  <div class="f-left w130 mr10">
-                    <select class="select-type1" title="분야선택">
-                      <option>전체1</option>
-                      <option>전체2</option>
-                      <option>전체3</option>
-                    </select>
-                  </div>
+      </div>
 
-                  <input type="text" class="search-text-type1 w300 f-left mr10" title="검색어 입력" />
+      <div class="online-consulting-area">
 
-                  <button type="button" class="btn btn-skyblue search-type1 w110 f-left mr10">검색</button>
+        <div class="container">
 
+          <div class="online-consulting-contents">
+
+            <div class="online-consulting-contents-top">
+
+              <div class="f-right">
+
+                <div class="f-left w130 mr10">
+                  <select class="select-type1" title="분야선택">
+                    <option>전체1</option>
+                    <option>전체2</option>
+                    <option>전체3</option>
+                  </select>
                 </div>
 
-                <script>
-                  $(function(){
-                    $('.select-type1').selectric();
-                  });
-                </script>
+                <input type="text" class="search-text-type1 w300 f-left mr10" title="검색어 입력" />
+
+                <button type="button" class="btn btn-skyblue search-type1 w110 f-left mr10">검색</button>
 
               </div>
 
-              <table class="table table-vt">
-
-                <colgroup>
-                  <col style="width:70px;" />
-                  <col style="width:90px;" />
-                  <col style="width:120px;" />
-                  <col style="width:150px;" />
-                  <col style="width:auto;" />
-                  <col style="width:130px;" />
-                  <col style="width:160px;" />
-                  <col style="width:130px;" />
-                </colgroup>
-
-                <thead>
-                <th>번호</th>
-                <th>구분</th>
-                <th class="table-cell-left">신청일</th>
-                <th class="table-cell-left">예약대상</th>
-                <th class="table-cell-left">메이커스페이스 명</th>
-                <th class="table-cell-left">예약일</th>
-                <th class="table-cell-left">회차</th>
-                <th>상태</th>
-                </thead>
-
-                <tbody>
-                <tr>
-                  <td class="table-cell-center">10</td>
-                  <td class="table-cell-center">장비</td>
-                  <td>2018-07-12</td>
-                  <td><a href="#" class="text-blue">3D프린터</a></td>
-                  <td><a href="#" class="text-blue">락스타진</a></td>
-                  <td>2018.12.23</td>
-                  <td>3회차(11:00 ~ 12:00)</td>
-                  <td class="table-cell-center">
-                    <button type="button" class="status-type status-btn">예약취소</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="table-cell-center">10</td>
-                  <td class="table-cell-center">공간</td>
-                  <td>2018-07-12</td>
-                  <td><a href="#" class="text-blue">레이저 커터</a></td>
-                  <td><a href="#" class="text-blue">성수메이커스페이스</a></td>
-                  <td>2018.12.23</td>
-                  <td>
-                    3회차(11:00 ~ 12:00)
-                  </td>
-                  <td class="table-cell-center">
-                    <div class="status-type status-skyblue">사용완료</div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="table-cell-center">10</td>
-                  <td class="table-cell-center">교육</td>
-                  <td>2018-07-12</td>
-                  <td><a href="#" class="text-blue">3D프린터</a></td>
-                  <td><a href="#" class="text-blue">락스타진</a></td>
-                  <td>2018.12.23</td>
-                  <td>
-                    3회차(11:00 ~ 12:00)
-                  </td>
-                  <td class="table-cell-center">
-                    <div class="status-type status-red">노쇼</div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="table-cell-center">10</td>
-                  <td class="table-cell-center">행사</td>
-                  <td>2018-07-12</td>
-                  <td><a href="#" class="text-blue">3D프린터</a></td>
-                  <td><a href="#" class="text-blue">스포츠융복합산업지원센터 MAKERS LAB</a></td>
-                  <td>2018.12.23</td>
-                  <td>
-                    3회차(11:00 ~ 12:00)<br/>
-                    3회차(11:00 ~ 12:00)<br/>
-                    3회차(11:00 ~ 12:00)<br/>
-                  </td>
-                  <td class="table-cell-center">
-                    <div class="status-type">예약취소</div>
-                  </td>
-                </tr>
-
-                </tbody>
-
-              </table>
+              <script>
+                $(function(){
+                  $('.select-type1').selectric();
+                });
+              </script>
 
             </div>
 
-            <div class="online-consulting-contents-paging">
+            <table class="table table-vt">
 
-              <div class="paging">
-                <button type="button" class="paging-item arrow prev">이전</button>
-                <!-- 현재 페이지 current 클래스 표기 -->
-                <a href="#" class="paging-item current">1</a>
-                <a href="#" class="paging-item">2</a>
-                <a href="#" class="paging-item">3</a>
-                <a href="#" class="paging-item">4</a>
-                <a href="#" class="paging-item">5</a>
-                <a href="#" class="paging-item">6</a>
-                <a href="#" class="paging-item">7</a>
-                <a href="#" class="paging-item">8</a>
-                <a href="#" class="paging-item">9</a>
-                <a href="#" class="paging-item">10</a>
-                <button type="button" class="paging-item arrow next">다음</button>
-              </div>
+              <colgroup>
+                <col style="width:70px;" />
+                <col style="width:90px;" />
+                <col style="width:120px;" />
+                <col style="width:150px;" />
+                <col style="width:auto;" />
+                <col style="width:130px;" />
+                <col style="width:160px;" />
+                <col style="width:130px;" />
+              </colgroup>
 
+              <thead>
+              <th>번호</th>
+              <th>구분</th>
+              <th class="table-cell-left">신청일</th>
+              <th class="table-cell-left">예약대상</th>
+              <th class="table-cell-left">메이커스페이스 명</th>
+              <th class="table-cell-left">예약일</th>
+              <th class="table-cell-left">회차</th>
+              <th>상태</th>
+              </thead>
+
+              <tbody>
+              <tr>
+                <td class="table-cell-center">10</td>
+                <td class="table-cell-center">장비</td>
+                <td>2018-07-12</td>
+                <td><a href="#" class="text-blue">3D프린터</a></td>
+                <td><a href="#" class="text-blue">락스타진</a></td>
+                <td>2018.12.23</td>
+                <td>3회차(11:00 ~ 12:00)</td>
+                <td class="table-cell-center">
+                  <button type="button" class="status-type status-btn">예약취소</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="table-cell-center">10</td>
+                <td class="table-cell-center">공간</td>
+                <td>2018-07-12</td>
+                <td><a href="#" class="text-blue">레이저 커터</a></td>
+                <td><a href="#" class="text-blue">성수메이커스페이스</a></td>
+                <td>2018.12.23</td>
+                <td>
+                  3회차(11:00 ~ 12:00)
+                </td>
+                <td class="table-cell-center">
+                  <div class="status-type status-skyblue">사용완료</div>
+                </td>
+              </tr>
+              <tr>
+                <td class="table-cell-center">10</td>
+                <td class="table-cell-center">교육</td>
+                <td>2018-07-12</td>
+                <td><a href="#" class="text-blue">3D프린터</a></td>
+                <td><a href="#" class="text-blue">락스타진</a></td>
+                <td>2018.12.23</td>
+                <td>
+                  3회차(11:00 ~ 12:00)
+                </td>
+                <td class="table-cell-center">
+                  <div class="status-type status-red">노쇼</div>
+                </td>
+              </tr>
+              <tr>
+                <td class="table-cell-center">10</td>
+                <td class="table-cell-center">행사</td>
+                <td>2018-07-12</td>
+                <td><a href="#" class="text-blue">3D프린터</a></td>
+                <td><a href="#" class="text-blue">스포츠융복합산업지원센터 MAKERS LAB</a></td>
+                <td>2018.12.23</td>
+                <td>
+                  3회차(11:00 ~ 12:00)<br/>
+                  3회차(11:00 ~ 12:00)<br/>
+                  3회차(11:00 ~ 12:00)<br/>
+                </td>
+                <td class="table-cell-center">
+                  <div class="status-type">예약취소</div>
+                </td>
+              </tr>
+
+              </tbody>
+
+            </table>
+
+          </div>
+
+          <div class="online-consulting-contents-paging">
+
+            <div class="paging">
+              <button type="button" class="paging-item arrow prev">이전</button>
+              <!-- 현재 페이지 current 클래스 표기 -->
+              <a href="#" class="paging-item current">1</a>
+              <a href="#" class="paging-item">2</a>
+              <a href="#" class="paging-item">3</a>
+              <a href="#" class="paging-item">4</a>
+              <a href="#" class="paging-item">5</a>
+              <a href="#" class="paging-item">6</a>
+              <a href="#" class="paging-item">7</a>
+              <a href="#" class="paging-item">8</a>
+              <a href="#" class="paging-item">9</a>
+              <a href="#" class="paging-item">10</a>
+              <button type="button" class="paging-item arrow next">다음</button>
             </div>
 
           </div>

@@ -172,6 +172,9 @@
 }
 
 .space-info{
+  &-wrap{
+    padding-top:260px;
+  }
 
   &-header{
 
@@ -192,6 +195,37 @@
 
 
 
+  }
+
+  &-section{
+    padding:30px;
+
+    &.general{
+      padding:25px 0 0;
+
+      .info-detail-list{
+        padding:45px 35px;
+        border-bottom:1px solid #d3d3d3;
+      }
+    }
+
+    .notice{
+      padding:10px;
+      border:2px solid #3db3e3;
+
+      &-text{
+        &-title{
+          font-size:24px;
+          color:#3b3b3b;
+        }
+
+        &-desc{
+          font-size:18px;
+          color:#505050;
+          line-height:1.6;
+        }
+      }
+    }
   }
 
   &-left{
@@ -342,6 +376,492 @@
       display:block;
       clear:both;
     }
+  }
+
+}
+
+.reservation{
+  padding:50px;
+
+  &-inner{
+    padding:25px 20px;
+    background:#f8f8f8;
+  }
+
+  &-title{
+    font-size:24px;
+    color:#3b3b3b;
+    font-weight:bold;
+    margin-bottom:15px;
+  }
+
+  &-step{
+
+    &-list{
+      background:#fff;
+
+      &:after{
+        content:"";
+        display:block;
+        clear:both;
+      }
+    }
+
+    &-item{
+      width:25%;
+      float:left;
+
+      &-title{
+        padding:10px 15px;
+        background:#636c76;
+        font-size:14px;
+        color:#fff;
+        font-weight:700;
+      }
+
+      &-info{
+        height:195px;
+        padding:0 20px;
+        margin:25px 0;
+        border-right:1px solid #e8e8e8;
+        overflow:auto;
+      }
+
+      &:last-child{
+        .reservation-step-item-info{
+          border-right:0;
+          padding:20px;
+        }
+      }
+
+      .step{
+        &-number{
+          color:#3db3e3;
+        }
+
+        &-image{
+
+          &.portrait{
+            width:auto;
+            height:146px;
+          }
+
+          &.landscape{
+            width:100%;
+            height:146px;
+          }
+
+          &-wrap{
+            text-align:center;
+          }
+
+
+        }
+
+        &-name{
+          font-size:24px;
+          font-weight:700;
+          text-align:center;
+        }
+
+        &-date{
+          .ui-datepicker{
+            border:0;
+            width:100%;
+            padding:0;
+          }
+
+          .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+            line-height:13px;
+          }
+        }
+
+        &-time{
+
+          &-item{
+            margin-bottom:5px;
+          }
+
+          &-zone{
+
+            &-hide{
+              width:0;
+              height:0;
+              position:relative;
+              overflow:hidden;
+            }
+
+            &-input{
+              position:absolute;
+              left:-99999em;
+
+              &:checked + .step-time-zone-label{
+                border-color:#f00;
+                //color:#f00;
+              }
+
+            }
+
+            &-label{
+              display:block;
+              height:33px;
+              border:1px solid #e8e8e8;
+
+              font-size:12px;
+              text-align:center;
+              line-height:33px;
+              position:relative;
+              cursor:pointer;
+            }
+          }
+        }
+
+        &-select{
+          margin-bottom:19px;
+
+          &:after{
+            content:"";
+            display:block;
+            clear:both;
+          }
+
+          &:last-child{
+            margin-bottom:0;
+          }
+
+          &-title{
+            font-size:14px;
+            color:#3b3b3b;
+            float:left;
+            margin:2px 10px 5px 0;
+          }
+          &-data{
+            font-size:24px;
+            color:#3b3b3b;
+            float:left;
+          }
+        }
+      }
+
+
+    }
+
+  }
+
+  &-table{
+    padding:30px;
+    background:#fff;
+  }
+
+  &-half{
+
+    &.f-left{
+      width:50%;
+      padding-right:15px;
+    }
+
+    &.f-right{
+      width:50%;
+      padding-left:15px;
+    }
+  }
+
+  &-text{
+    height:155px;
+    padding:35px;
+    background:#fff;
+  }
+
+}
+
+.space-slider{
+
+  &-image{
+    width:540px;
+    height:300px;
+  }
+
+}
+
+.search{
+  &-visual{
+    padding:38px 33px 0;
+
+    &-item{
+
+      &.half{
+        width:50%;
+
+        &.f-left{
+          padding-right:40px;
+        }
+
+        &.f-right{
+          padding-left:40px;
+        }
+      }
+
+      &-heading{
+        padding-left: 7px;
+        margin-bottom: 7px;
+        position: relative;
+        box-sizing: border-box;
+        line-height:1.8;
+
+        &:before{
+          content: "";
+          display: block;
+          width: 3px;
+          height: 2px;
+          background: url(/images/online_consulting/spr_online_consulting_input.png) -67px 0 no-repeat;
+          position: absolute;
+          top: 12px;
+          left: 0;
+        }
+      }
+
+      &-content{
+
+        &:after{
+          content:"";
+          display:block;
+          clear:both;
+        }
+
+        iframe{
+          display:block;
+          width:100%;
+          height:300px;
+        }
+
+        .space-team{
+          //width:25%;
+          padding:25px;
+          border:1px solid #dedede;
+          float:left;
+
+          &:nth-child(4n+1){
+            width:calc(25% - 10px);
+            margin-right:10px;
+          }
+
+          &:nth-child(4n+2),
+          &:nth-child(4n+3){
+            width:calc(25% - 10px);
+            margin:auto 5px;
+          }
+
+          &:nth-child(4n){
+            width:calc(25% - 10px);
+            margin-left:10px;
+          }
+
+          &:after{
+            content:"";
+            display:block;
+            clear:both;
+          }
+
+          &-title{
+            color:#231f20;
+          }
+
+          &-desc{
+            color:#505050;
+            line-height:1.4;
+          }
+          &-picture{
+            width:94px;
+            height:94px;
+            border-radius:100px;
+            overflow:hidden;
+
+            img{
+              width:100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.bx-wrapper{
+  box-shadow:none;
+  border:0;
+  background:0;
+
+  .bx-controls-direction a{
+    width:50px;
+    height:50px;
+    margin-top:-25px;
+  }
+
+  .bx-prev{
+    left: -24px;
+    background: url(/images/search/spr_search_slide_arrow.png) no-repeat 0 0;
+
+    &:hover, &:focus{
+      background-position:0 0;
+    }
+  }
+
+  .bx-next{
+    right: -24px;
+    background: url(/images/search/spr_search_slide_arrow.png) no-repeat -60px 0;
+
+    &:hover, &:focus{
+      background-position:-60px 0;
+    }
+}
+}
+
+.space-satisfaction{
+  padding:20px;
+  background:#f8f8f8;
+
+  &-header{
+    height:62px;
+    background:#636c76;
+    line-height:62px;
+  }
+
+  &-title{
+    padding-left:20px;
+    font-size:25px;
+    color:#fff;
+  }
+
+  &-total{
+    font-size:25px;
+    color:#ffb400;
+  }
+
+  &-body{
+    padding:30px 0;
+    //background:#f7f7f7;
+    background:#fff;
+  }
+
+  &-list{
+
+    &:after{
+      content:"";
+      display:block;
+      cleaR:both;
+    }
+
+  }
+
+  &-item{
+    width:25%;
+    padding:0 25px;
+    border-right:1px solid #d8d8d8;
+    float:left;
+
+    &:last-child{
+      border-right:0;
+    }
+
+    &-header{
+      margin-bottom:15px;
+      line-height:20px;
+    }
+
+    &-title{
+      font-size:18px;
+    }
+
+  }
+
+  &-graph{
+    font-size:13px;
+    padding:10px 0;
+    border-bottom:1px solid #f3f3f3;
+
+    &:after{
+      content:"";
+      display:block;
+      clear:both;
+    }
+
+    &-point{
+      width:40px;
+      padding-left:17px;
+      position:relative;
+
+      &:before{
+        content:"";
+        display:block;
+        width:14px;
+        height:12px;
+        background:url(/images/search/icon_star.png) no-repeat;
+        position:absolute;
+        top:-1px;
+        left:0;
+      }
+    }
+
+    &-amount{
+      width:155px;
+
+      .bar{
+        width:100%;
+        text-indent:-99999em;
+        height:12px;
+        border-radius:100px;
+        background:#91989f;
+      }
+
+      &-num{
+        width:23px;
+        text-align:right;
+      }
+    }
+  }
+
+}
+
+.space-reply{
+
+
+  &-item{
+    min-height:150px;
+    &:after{
+      content:"";
+      display:block;
+      clear:both;
+    }
+  }
+
+  &-title {
+    &-wrap {
+      width: 335px;
+      min-height:150px;
+      float: left;
+      position:relative;
+    }
+
+    &-superscript{
+      font-size:16px;
+      color:#777;
+      font-weight:700;
+    }
+
+    font-size:30px;
+    font-weight:700;
+    margin-top:10px;
+
+
+  }
+
+  &.satisfaction{
+    position:absolute;
+    bottom:0;
+  }
+
+  &-body-wrap{
+    float:left;
   }
 
 }

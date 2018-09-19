@@ -67,6 +67,18 @@
     background:#424242;
   }
 
+  &-dark-border{
+    border:1px solid #3b3b3b;
+    font-size:13px;
+  }
+
+  &-table{
+    height:41px;
+    background:#888;
+    color:#fff;
+    font-sisze:13px;
+  }
+
   &.search{
     &-type1{
       height:33px;
@@ -97,7 +109,6 @@
   }
 
 }
-
 
 .link{
 
@@ -231,5 +242,11 @@
     height:26px;
     font-size:13px;
     padding:0 10px;
+  }
+
+  &-table{
+    height:41px;
+    border:1px solid #e8e8e8;
+    box-sizing: border-box;
   }
 }
