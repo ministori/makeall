@@ -824,9 +824,30 @@
 
 .space-reply{
 
+  padding:0 20px;
 
   &-item{
-    min-height:150px;
+    padding-bottom:5px;
+    border-bottom:1px solid #d8d8d8;
+    position:relative;
+
+    &:after{
+      content:"";
+      display:block;
+      width:275px;
+      height:2px;
+      background:#222;
+      position:absolute;
+      left:0;
+      bottom:0;
+    }
+  }
+
+  &-wrap{
+    min-height:190px;
+    padding:50px 0 0 335px;
+    position:relative;
+
     &:after{
       content:"";
       display:block;
@@ -837,9 +858,12 @@
   &-title {
     &-wrap {
       width: 335px;
-      min-height:150px;
+      height:100%;
+      padding-top:50px;
       float: left;
-      position:relative;
+      position:absolute;
+      top:0;
+      left:0;
     }
 
     &-superscript{
@@ -857,11 +881,90 @@
 
   &.satisfaction{
     position:absolute;
-    bottom:0;
+    bottom:20px;
   }
 
-  &-body-wrap{
-    float:left;
+  &-body{
+
+    &-wrap{
+      float:left;
+      width:100%;
+    }
+
+    &-title{
+      display:inline-block;
+      position:relative;
+      font-size:24px;
+      font-weight:700;
+      margin-bottom:20px;
+
+      &.new{
+        &:after{
+          content:"N";
+          display:block;
+          width:26px;
+          height:26px;
+          background:#3db3e3;
+          color:#fff;
+          font-size:13px;
+          border-radius:100px;
+          text-align:center;
+          line-height:26px;
+          position:absolute;
+          top:-1px;
+          right:-40px;
+        }
+      }
+    }
+
+    &-desc{
+      line-height:1.8;
+    }
+
+    &-id-date{
+      font-size:13px;
+      text-align:right;
+      padding-right:30px;
+    }
+  }
+
+  &-reply{
+    padding-left:275px;
+    background:#f5f5f5;
+    position:relative;
+
+    &-item{
+      height:130px;
+      padding:30px 0 0 40px;
+      margin-left:60px;
+      border-bottom:1px solid #d3d3d3;
+      position:relative;
+
+      &:last-child{
+        border-bottom:0;
+      }
+
+      &:before{
+        content:"";
+        display:block;
+        width:14px;
+        height:20px;
+        background:url(/images/search/icon_reply.png) no-repeat;
+        position:absolute;
+        top:25px;
+        left:15px;
+      }
+
+      &-text{
+        line-height:1.8;
+      }
+
+      &-id-date{
+        font-size: 13px;
+        text-align: right;
+        padding-right: 30px;
+      }
+    }
   }
 
 }

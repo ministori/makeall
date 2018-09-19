@@ -487,227 +487,482 @@
     </script>
     <!-- // header -->
   <!-- contents -->
-  <div id="real_contents" class="contents">
-
-    <!-- sub_top -->
-    <div class="sub_top">
-      <div class="container">
-        <ul class="breadcrumb">
-          <li><i class="ti-home"></i> HOME</li>
-          <li>마이페이지</li>
-        </ul>
-        <h2 class="sub_top_tit">마이<span class="normal">페이지</span></h2>
-      </div>
-    </div>
-    <!-- // sub_top -->
-    <!-- 로그인 관련 스크립트 주석처리
-    <script type="text/javascript">
-      function find_string() {
-          var form = document.sub_form;
-          form.page.value = "1";
-
-          form.submit();
-      }
-
-      function project_tab(category){
-          document.location.href="?tsort=3&msort=8&s_key=&s_type=project_name&category="+category;
-      }
-
-      function write_btn(mode) {
-          var m_id = "";
-
-          if(m_id == "") {
-              alert('로그인 후 이용가능합니다.');
-              return;
-          }
-          var szhref = "/network/openingwrite.php?tsort=3&msort=8&s_key=&s_type=project_name&no=&page=1&mode="+mode+"&category=";
-
-          window.open(szhref , "admin_menu2" , "width=900,height=800,scrollbars=yes,resize=yes");
-      }
-
-      function open_write_btn(mode) {
-          var m_id = "";
-
-          if(m_id == "") {
-              alert('로그인 후 이용가능합니다.');
-              return;
-          }
-
-          document.location.href="/network/openproject.php?tsort=3&msort=8&s_key=&s_type=project_name&no=&page=1&mode=" + mode;
-      }
-  </script>
-    -->
-    <div class="mypage_wrap">
-
-      <div class="tab_wrap scroll">
-
+  <div id="real_contents" class="contents space-search">
+    <!--<div class="container">-->
+      <!-- sub_top -->
+      <div class="sub_top">
         <div class="container">
-          <ul class="tab">
-            <li><a href="">프로필관리</a></li>
-            <li><a href="">회원정보변경</a></li>
-            <li><a href="">스크랩</a></li>
-            <li><a href="">Follow/Followings</a></li>
-            <li><a href="">오픈프로젝트</a></li>
-            <li><a href="">매뉴얼</a></li>
-            <li class="on" style="width:14%;"><a href="">예약/신청내역</a></li>
-            <li><a href="">만족도평가</a></li>
-            <li><a href="">컨설팅내역</a></li>
-            <li style="width:14%;"><a href="">온라인 컨설팅관리</a></li>
+          <ul class="breadcrumb">
+            <li><i class="ti-home"></i> HOME</li>
+            <li>메이커 스페이스 검색/예약</li>
           </ul>
-        </div>
-
-      </div>
-
-      <div class="container">
-        <div class="space-info-tab-wrap">
-
-          <ul class="space-info-tab">
-            <li class="space-info-tab-item">
-              <a href="#" class="space-info-tab-link">전체</a>
-            </li>
-            <li class="space-info-tab-item">
-              <a href="#" class="space-info-tab-link">장비 예약</a>
-            </li>
-            <li class="space-info-tab-item">
-              <a href="#" class="space-info-tab-link">공간 예약</a>
-            </li>
-            <li class="space-info-tab-item">
-              <a href="#" class="space-info-tab-link">교육 예약</a>
-            </li>
-            <li class="space-info-tab-item">
-              <a href="#" class="space-info-tab-link on">행사 예약</a>
-            </li>
-          </ul>
-
+          <h2 class="sub_top_tit">메이커 <span class="normal">스페이스 검색/예약</span></h2>
+          <p class="sub-top-desc">메이커 스페이스는 메이커 분들의 창작활동을 응원합니다.</p>
         </div>
       </div>
+      <!-- // sub_top -->
+      <!-- 로그인 관련 스크립트 주석처리
+      <script type="text/javascript">
+        function find_string() {
+            var form = document.sub_form;
+            form.page.value = "1";
 
-      <div class="online-consulting-area">
+            form.submit();
+        }
 
-        <div class="container">
+        function project_tab(category){
+            document.location.href="?tsort=3&msort=8&s_key=&s_type=project_name&category="+category;
+        }
 
-          <div class="online-consulting-contents">
+        function write_btn(mode) {
+            var m_id = "";
 
-            <div class="online-consulting-contents-top">
+            if(m_id == "") {
+                alert('로그인 후 이용가능합니다.');
+                return;
+            }
+            var szhref = "/network/openingwrite.php?tsort=3&msort=8&s_key=&s_type=project_name&no=&page=1&mode="+mode+"&category=";
 
-              <div class="f-right">
+            window.open(szhref , "admin_menu2" , "width=900,height=800,scrollbars=yes,resize=yes");
+        }
 
-                <div class="f-left w130 mr10">
-                  <select class="select-type1" title="분야선택">
-                    <option>전체1</option>
-                    <option>전체2</option>
-                    <option>전체3</option>
-                  </select>
-                </div>
+        function open_write_btn(mode) {
+            var m_id = "";
 
-                <input type="text" class="search-text-type1 w300 f-left mr10" title="검색어 입력" />
+            if(m_id == "") {
+                alert('로그인 후 이용가능합니다.');
+                return;
+            }
 
-                <button type="button" class="btn btn-skyblue search-type1 w110 f-left mr10">검색</button>
+            document.location.href="/network/openproject.php?tsort=3&msort=8&s_key=&s_type=project_name&no=&page=1&mode=" + mode;
+        }
+    </script>
+      -->
+      <div class="wrap">
+        <div class="contents_wrap">
 
+          <div class="space-search-area">
+
+            <div class="container">
+
+              <div class="space-search-input-wrap">
+                <input type="text" class="space-search-input" title="주소를 입력해주세요 근처의 메이커스페이스를 찾아드립니다." placeholder="주소를 입력해주세요 근처의 메이커스페이스를 찾아드립니다." />
+                <button type="button" class="space-search-btn">검색</button>
               </div>
 
+              <div class="space-search-select-area">
+
+                <div class="space-search-select-wrap">
+                  <label class="space-search-select-heading" for="service-select">제공서비스</label>
+                  <select class="space-search-select" id="service-select">
+                    <option>장비예약</option>
+                    <option>공간예약</option>
+                    <option>교육예약</option>
+                    <option>행사예약</option>
+                  </select>
+                </div>
+                <div class="space-search-select-wrap">
+                  <label class="space-search-select-heading" for="local-select">지역 선택</label>
+                  <select class="space-search-select float" id="local-select">
+                    <option>서울</option>
+                    <option>강원</option>
+                    <option>경기</option>
+                    <option>경남</option>
+                    <option>경북</option>
+                    <option>광주</option>
+
+                    <option>대구</option>
+                    <option>대전</option>
+                    <option>부산</option>
+                    <option>세종</option>
+                    <option>울산</option>
+                    <option>인천</option>
+
+                    <option>전남</option>
+                    <option>전북</option>
+                    <option>제주</option>
+                    <option>충남</option>
+                    <option>충북</option>
+                    <option>전국</option>
+                  </select>
+                </div>
+                <div class="space-search-select-wrap full-width-item">
+                  <label class="space-search-select-heading" for="tool-select">장비 선택</label>
+                  <select class="space-search-select float" id="tool-select">
+                    <option>3D 프린터</option>
+                    <option>비닐커터</option>
+                    <option>드릴프레스</option>
+                    <option>목공선반</option>
+                    <option>종이제단기</option>
+                    <option>스핀들샌더</option>
+                    <option>UV평판프린터</option>
+                    <option>3D스캐너</option>
+                    <option>플로터</option>
+                    <option>용접기</option>
+                    <option>진공성형기</option>
+                    <option>워터젯</option>
+                    <option>플라즈마아크릴용해로</option>
+                    <option>회전쏘</option>
+                    <option>레이저커터</option>
+                    <option>그라인더</option>
+                    <option>밴드쏘</option>
+                    <option>프레스</option>
+                    <option>트리머</option>
+                    <option>암연기</option>
+                    <option>각끌기</option>
+                    <option>CNC</option>
+                    <option>스크롤쏘</option>
+                    <option>디지털조각기</option>
+                    <option>디스크샌더</option>
+                    <option>스카시쏘</option>
+                    <option>플라즈마커팅기</option>
+                    <option>와인더</option>
+                    <option>3D펜</option>
+                    <option>열선커터기</option>
+                    <option>각도조절기</option>
+                    <option>라우터</option>
+                    <option>평판프린터</option>
+                    <option>연마기</option>
+                    <option>절곡기</option>
+                    <option>테이블쏘</option>
+                    <option>오실로스코프</option>
+                    <option>자동대패</option>
+                    <option>직쏘</option>
+                    <option>아크릴벤딩기</option>
+                    <option>함수발생기</option>
+                    <option>방전가공기</option>
+                    <option>진공가열로</option>
+                    <option>밴딩기</option>
+                    <option>진공아크릴용해로</option>
+                    <option>벌트샌더</option>
+                    <option>갈날커팅기</option>
+                    <option>샵트</option>
+                    <option>선반(Lathe)</option>
+                    <option>진공금속용해로</option>
+                  </select>
+                </div>
+                <div class="space-search-select-wrap date start">
+                  <label class="space-search-select-heading" for="start-date-select">시작일 선택</label>
+                  <div class="space-search-select-body">
+                    <input type="text" id="start-date-select" class="space-search-input-date start" />
+                    <button type="button" class="space-search-btn-date start">달력보기</button>
+                  </div>
+                </div>
+                <div class="space-search-select-wrap date end">
+                  <label class="space-search-select-heading" for="end-date-select">종료일 선택</label>
+                  <div class="space-search-select-body">
+                    <input type="text" id="end-date-select" class="space-search-input-date end" />
+                    <button type="button" class="space-search-btn-date end">달력보기</button>
+                  </div>
+                </div>
+
+                <button type="button" class="space-search-select-btn">검색</button>
+
+              </div>
               <script>
                 $(function(){
-                  $('.select-type1').selectric();
+
+                  $('.space-search-select').selectric({
+                    maxHeight: 200
+                  });
+
+                  $('.space-search-input-date').datepicker({
+                    dateFormat: 'yy-mm-dd',
+                    dayNamesMin:['S', 'M', 'T', 'W', 'T', 'F', 'S'],
+                    showMonthAfterYear: true,
+                    monthNames:['. 01', '. 02', '. 03', '. 04', '. 05', '. 06', '. 07', '. 08', '. 09', '. 10', '. 11', '. 12'],
+                    showButtonPanel: true,
+                    gotoCurrent: true,
+                  }).datepicker('setDate', new Date());
+
+                  $('.space-search-btn-date.start').on('click', function(){
+
+                    $('.space-search-input-date.start').datepicker('show');
+
+                  });
+
+                  $('.space-search-btn-date.end').on('click', function(){
+
+                    $('.space-search-input-date.end').datepicker('show');
+
+                  });
+
                 });
               </script>
 
             </div>
 
-            <table class="table table-vt">
-
-              <colgroup>
-                <col style="width:90px;" />
-                <col style="width:120px;" />
-                <col style="width:200px;" />
-                <col style="width:auto;" />
-                <col style="width:130px;" />
-                <col style="width:130px;" />
-              </colgroup>
-
-              <thead>
-              <th>번호</th>
-              <th class="table-cell-left">신청일</th>
-              <th class="table-cell-left">행사명</th>
-              <th class="table-cell-left">메이커스페이스</th>
-              <th class="table-cell-left">예약일</th>
-              <th>상태</th>
-              </thead>
-
-              <tbody>
-              <tr>
-                <td class="table-cell-center">10</td>
-                <td>2018-07-12</td>
-                <td><a href="#" class="text-blue">메이커스 챌린지</a></td>
-                <td><a href="#" class="text-blue">스포츠융복합산업지원센터 MAKERS LAB</a></td>
-                <td>2018.12.23</td>
-                <td class="table-cell-center">
-                  <div class="status-type">예약취소</div>
-                </td>
-              </tr>
-              <tr>
-                <td class="table-cell-center">10</td>
-                <td>2018-07-12</td>
-                <td><a href="#" class="text-blue">메이커스 챌린지</a></td>
-                <td><a href="#" class="text-blue">스포츠융복합산업지원센터 MAKERS LAB</a></td>
-                <td>2018.12.23</td>
-                <td class="table-cell-center">
-                  <div class="status-type status-skyblue">사용완료</div>
-                </td>
-              </tr>
-              <tr>
-                <td class="table-cell-center">10</td>
-                <td>2018-07-12</td>
-                <td><a href="#" class="text-blue">2018년 메이커 네트워킹</a></td>
-                <td><a href="#" class="text-blue">스포츠융복합산업지원센터 MAKERS LAB</a></td>
-                <td>2018.12.23</td>
-                <td class="table-cell-center">
-                  <div class="status-type status-red">노쇼</div>
-                </td>
-              </tr>
-              <tr>
-                <td class="table-cell-center">10</td>
-                <td>2018-07-12</td>
-                <td><a href="#" class="text-blue">메이커스 챌린지</a></td>
-                <td><a href="#" class="text-blue">스포츠융복합산업지원센터 MAKERS LAB</a></td>
-                <td>2018.12.23</td>
-                <td class="table-cell-center">
-                  <button type="button" class="status-type status-btn">예약취소</button>
-                </td>
-              </tr>
-
-              </tbody>
-
-            </table>
-
           </div>
 
-          <div class="online-consulting-contents-paging">
+          <!-- net_tab -->
+          <div class="net_tab">
+            <a href="" class="on">내 주변 메이커 스페이스</a>
+            <p>/</p>
+            <a href="">메이커 스페이스 맵</a>
+            <p>/</p>
+            <a href="">인기 메이커 스페이스</a>
+            <p>/</p>
+            <a href="">추천 메이커 교육</a>
+            <p>/</p>
+            <a href="">메이커스 네트워크</a>
+          </div>
+          <!-- // net_tab -->
 
-            <div class="paging">
-              <button type="button" class="paging-item arrow prev">이전</button>
-              <!-- 현재 페이지 current 클래스 표기 -->
-              <a href="#" class="paging-item current">1</a>
-              <a href="#" class="paging-item">2</a>
-              <a href="#" class="paging-item">3</a>
-              <a href="#" class="paging-item">4</a>
-              <a href="#" class="paging-item">5</a>
-              <a href="#" class="paging-item">6</a>
-              <a href="#" class="paging-item">7</a>
-              <a href="#" class="paging-item">8</a>
-              <a href="#" class="paging-item">9</a>
-              <a href="#" class="paging-item">10</a>
-              <button type="button" class="paging-item arrow next">다음</button>
+          <!-- [D] 각 스페이스 별 사진 배경으로 사용 -->
+          <div class="space-info-wrap" style="background:url(/images/search/bg_sub.jpg) no-repeat; background-size:contain;">
+
+            <div class="container space-info">
+
+              <div class="space-info-header">
+
+                <div class="space-info-header-inner">
+
+                  <div class="space-info-left">
+
+                    <div class="info-heading">서울디지털재단</div>
+
+                    <div class="info-grade">
+                      <div class="info-grade-local">
+                        <span class="ranking gold">gold</span>
+                        <!-- [D] 랭킹 왕관 표시 : 개발시 삭제 필요
+                        <span class="ranking silver">silver</span>
+                        <span class="ranking bronze">bronze</span>
+                        -->
+                        <span class="region-name">서울</span>
+                        <span class="region-num">1</span>
+                      </div>
+                      <div class="info-grade-local">
+                        <span>만족도</span>
+                        <span class="satisfaction n0">0</span>
+                        <!-- [D] 만족도 표시 : 개발시 삭제 필요
+                        <span class="satisfaction n1">1</span>
+                        <span class="satisfaction n2">2</span>
+                        <span class="satisfaction n3">3</span>
+                        <span class="satisfaction n4">4</span>
+                        <span class="satisfaction n5">5</span>
+                        -->
+                      </div>
+                      <div class="info-grade-local">
+                        <span>평가</span>
+                        <span class="evaluate">43</span>
+                      </div>
+                    </div>
+
+                    <div class="info-contact">
+                      <span class="contact-item address">서울 강남구 역삼로 165</span>
+                      <span class="contact-item tel">1544-8622</span>
+                      <a href="http://www.makersvill.com" class="contact-item url">www.makersvill.com</a>
+                    </div>
+
+                    <p class="info-desc">
+                      메이커스빌은  예비창업자들의 시제품 제작을 돕고 3D 프린팅, 3D 모델링, 창업,
+                      코딩, 영어피칭 및 IR(투자가를 위한 홍보) 등 창업과 관련된 다양한 교육 프로그램을
+                      제공하고 있다.<br/>
+                      올해 8월 설립됐으며, 그동안 대학생 및 초·중·고등학생들을 위한 교육을 진행해왔다
+                    </p>
+
+                  </div>
+
+                  <div class="space-info-right">
+                    <!-- 실제 지도로 교체 -->
+                    <img src="/images/search/temp_search_map.png" />
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="space-info-body">
+
+                <div class="space-info-tab-wrap">
+
+                  <ul class="space-info-tab">
+                    <li class="space-info-tab-item">
+                      <a href="#" class="space-info-tab-link">일반 정보</a>
+                    </li>
+                    <li class="space-info-tab-item">
+                      <a href="#" class="space-info-tab-link">장비 정보</a>
+                    </li>
+                    <li class="space-info-tab-item">
+                      <a href="#" class="space-info-tab-link">공간 정보</a>
+                    </li>
+                    <li class="space-info-tab-item">
+                      <a href="#" class="space-info-tab-link on">교육 정보</a>
+                    </li>
+                    <li class="space-info-tab-item">
+                      <a href="#" class="space-info-tab-link">이벤트 정보</a>
+                    </li>
+                    <li class="space-info-tab-item">
+                      <a href="#" class="space-info-tab-link">사용자 만족도</a>
+                    </li>
+                  </ul>
+
+                </div>
+
+                <div class="space-info-section">
+
+                  <div class="container">
+
+                    <ul class="list-type3">
+
+                      <li class="list-type3-item">
+
+                        <div class="f-left mr35 h330">
+                          <img src="/images/search/temp_list3-1.jpg" class="list-type3-image" alt="" />
+                        </div>
+
+                        <div class="f-left mr70 w200 h330">
+                          <div class="list-type3-title">3D 프린터 활용<br/>기초과정</div>
+
+                          <a href="" class="btn btn-cyan btn-absolute bottom">예약하기</a>
+                        </div>
+
+                        <div class="f-left h330">
+
+                          <ul class="info-detail-list">
+                            <li class="info-detail-item"><span class="heading">교육</span><span class="desc">메이커스튜디오x무한상상실 3D프린터 활용 기초과정</span></li>
+                            <li class="info-detail-item"><span class="heading">장소</span><span class="desc">메이커스튜디오 (부산광역시 부산진구 동천로 116 한신VAN 1층)</span></li>
+                            <li class="info-detail-item"><span class="heading">교육대상</span><span class="desc">3D프린터에 관심 있는 학생 및 일반인</span></li>
+                            <li class="info-detail-item"><span class="heading">교육일시</span><span class="desc">2018.07.21.(토), 14:00~18:00</span></li>
+                            <li class="info-detail-item"><span class="heading">교육인원</span><span class="desc">15명</span></li>
+                            <li class="info-detail-item"><span class="heading">재료비</span><span class="desc">10,000원</span></li>
+                            <li class="info-detail-item"><span class="heading">문의</span><span class="desc">070-7327-0610 혹은 카카오톡 플러스친구 ID 메이커스튜디오</span></li>
+                            <li class="info-detail-item"><span class="heading">준비물</span><span class="desc">개인 윈도우 노트북 필참</span></li>
+                            <li class="info-detail-item"><span class="heading">교육내용</span><span class="desc">&nbsp;</span></li>
+                          </ul>
+
+                        </div>
+
+                      </li>
+
+                      <li class="list-type3-item">
+
+                        <div class="f-left mr35 h330">
+                          <img src="/images/search/temp_list3-1.jpg" class="list-type3-image" alt="" />
+                        </div>
+
+                        <div class="f-left mr70 w200 h330">
+                          <div class="list-type3-title">3D 프린터 활용<br/>기초과정</div>
+
+                          <a href="" class="btn btn-cyan btn-absolute bottom">예약하기</a>
+                        </div>
+
+                        <div class="f-left h330">
+
+                          <ul class="info-detail-list">
+                            <li class="info-detail-item"><span class="heading">교육</span><span class="desc">메이커스튜디오x무한상상실 3D프린터 활용 기초과정</span></li>
+                            <li class="info-detail-item"><span class="heading">장소</span><span class="desc">메이커스튜디오 (부산광역시 부산진구 동천로 116 한신VAN 1층)</span></li>
+                            <li class="info-detail-item"><span class="heading">교육대상</span><span class="desc">3D프린터에 관심 있는 학생 및 일반인</span></li>
+                            <li class="info-detail-item"><span class="heading">교육일시</span><span class="desc">2018.07.21.(토), 14:00~18:00</span></li>
+                            <li class="info-detail-item"><span class="heading">교육인원</span><span class="desc">15명</span></li>
+                            <li class="info-detail-item"><span class="heading">재료비</span><span class="desc">10,000원</span></li>
+                            <li class="info-detail-item"><span class="heading">문의</span><span class="desc">070-7327-0610 혹은 카카오톡 플러스친구 ID 메이커스튜디오</span></li>
+                            <li class="info-detail-item"><span class="heading">준비물</span><span class="desc">개인 윈도우 노트북 필참</span></li>
+                            <li class="info-detail-item"><span class="heading">교육내용</span><span class="desc">&nbsp;</span></li>
+                          </ul>
+
+                        </div>
+
+                      </li>
+
+                      <li class="list-type3-item">
+
+                        <div class="f-left mr35 h330">
+                          <img src="/images/search/temp_list3-1.jpg" class="list-type3-image" alt="" />
+                        </div>
+
+                        <div class="f-left mr70 w200 h330">
+                          <div class="list-type3-title">3D 프린터 활용<br/>기초과정</div>
+
+                          <a href="" class="btn btn-cyan btn-absolute bottom">예약하기</a>
+                        </div>
+
+                        <div class="f-left h330">
+
+                          <ul class="info-detail-list">
+                            <li class="info-detail-item"><span class="heading">교육</span><span class="desc">메이커스튜디오x무한상상실 3D프린터 활용 기초과정</span></li>
+                            <li class="info-detail-item"><span class="heading">장소</span><span class="desc">메이커스튜디오 (부산광역시 부산진구 동천로 116 한신VAN 1층)</span></li>
+                            <li class="info-detail-item"><span class="heading">교육대상</span><span class="desc">3D프린터에 관심 있는 학생 및 일반인</span></li>
+                            <li class="info-detail-item"><span class="heading">교육일시</span><span class="desc">2018.07.21.(토), 14:00~18:00</span></li>
+                            <li class="info-detail-item"><span class="heading">교육인원</span><span class="desc">15명</span></li>
+                            <li class="info-detail-item"><span class="heading">재료비</span><span class="desc">10,000원</span></li>
+                            <li class="info-detail-item"><span class="heading">문의</span><span class="desc">070-7327-0610 혹은 카카오톡 플러스친구 ID 메이커스튜디오</span></li>
+                            <li class="info-detail-item"><span class="heading">준비물</span><span class="desc">개인 윈도우 노트북 필참</span></li>
+                            <li class="info-detail-item"><span class="heading">교육내용</span><span class="desc">&nbsp;</span></li>
+                          </ul>
+
+                        </div>
+
+                      </li>
+
+                      <li class="list-type3-item">
+
+                        <div class="f-left mr35 h330">
+                          <img src="/images/search/temp_list3-1.jpg" class="list-type3-image" alt="" />
+                        </div>
+
+                        <div class="f-left mr70 w200 h330">
+                          <div class="list-type3-title">3D 프린터 활용<br/>기초과정</div>
+
+                          <a href="" class="btn btn-cyan btn-absolute bottom">예약하기</a>
+                        </div>
+
+                        <div class="f-left h330">
+
+                          <ul class="info-detail-list">
+                            <li class="info-detail-item"><span class="heading">교육</span><span class="desc">메이커스튜디오x무한상상실 3D프린터 활용 기초과정</span></li>
+                            <li class="info-detail-item"><span class="heading">장소</span><span class="desc">메이커스튜디오 (부산광역시 부산진구 동천로 116 한신VAN 1층)</span></li>
+                            <li class="info-detail-item"><span class="heading">교육대상</span><span class="desc">3D프린터에 관심 있는 학생 및 일반인</span></li>
+                            <li class="info-detail-item"><span class="heading">교육일시</span><span class="desc">2018.07.21.(토), 14:00~18:00</span></li>
+                            <li class="info-detail-item"><span class="heading">교육인원</span><span class="desc">15명</span></li>
+                            <li class="info-detail-item"><span class="heading">재료비</span><span class="desc">10,000원</span></li>
+                            <li class="info-detail-item"><span class="heading">문의</span><span class="desc">070-7327-0610 혹은 카카오톡 플러스친구 ID 메이커스튜디오</span></li>
+                            <li class="info-detail-item"><span class="heading">준비물</span><span class="desc">개인 윈도우 노트북 필참</span></li>
+                            <li class="info-detail-item"><span class="heading">교육내용</span><span class="desc">&nbsp;</span></li>
+                          </ul>
+
+                        </div>
+
+                      </li>
+
+                    </ul>
+
+                    <div class="paging-wrap">
+
+                      <div class="paging">
+                        <button type="button" class="paging-item arrow prev">이전</button>
+                        <!-- 현재 페이지 current 클래스 표기 -->
+                        <a href="#" class="paging-item current">1</a>
+                        <a href="#" class="paging-item">2</a>
+                        <a href="#" class="paging-item">3</a>
+                        <a href="#" class="paging-item">4</a>
+                        <a href="#" class="paging-item">5</a>
+                        <a href="#" class="paging-item">6</a>
+                        <a href="#" class="paging-item">7</a>
+                        <a href="#" class="paging-item">8</a>
+                        <a href="#" class="paging-item">9</a>
+                        <a href="#" class="paging-item">10</a>
+                        <button type="button" class="paging-item arrow next">다음</button>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
             </div>
 
           </div>
+
 
         </div>
 
       </div>
 
-    </div>
-
+    <!--</div>-->
   </div>
   <!-- // contents -->
 <!-- footer-->
